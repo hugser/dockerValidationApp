@@ -1,0 +1,34 @@
+{
+    "BALDER": [
+        "R3-307M2/DIA/BPM-02", 
+        "R3-308M1/DIA/BPM-01"
+    ], 
+    "BioMAX": [
+        "R3-310M2/DIA/BPM-02", 
+        "R3-311M1/DIA/BPM-01"
+    ], 
+    "CoSAXS": [
+        "R3-309M2/DIA/BPM-02", 
+        "R3-310M1/DIA/BPM-01"
+    ], 
+    "Hippie": [
+        "R3-316M2/DIA/BPM-02", 
+        "R3-317M1/DIA/BPM-01"
+    ], 
+    "MIK": [
+        "R3-301M2/DIA/BPM-02", 
+        "R3-302M1/DIA/BPM-01"
+    ], 
+    "NamoMAX": [
+        "R3-302M2/DIA/BPM-02", 
+        "R3-303M1/DIA/BPM-01"
+    ], 
+    "SoftiMAX": [
+        "R3-317M2/DIA/BPM-02", 
+        "R3-318M1/DIA/BPM-01"
+    ], 
+    "Veritas": [
+        "R3-315M2/DIA/BPM-02", 
+        "R3-316M1/DIA/BPM-01"
+    ]
+}

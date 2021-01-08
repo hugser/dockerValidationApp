@@ -1,0 +1,13 @@
+{
+    "STAGE": {
+        "current": ["NONE","COLD","HOT"],
+        "acc": ["R1","R3"],
+        "_info":  [["R1","NONE"],
+                   ["R1","COLD"],
+                   ["R1","HOT"],
+                   ["R3","NONE"],
+                   ["R3","COLD"],
+                   ["R3","HOT"]]
+    }
+    
+}

@@ -1,0 +1,87 @@
+BBB: 
+  COLD:
+    Info: Bunch by Bunch
+    Tips: |
+      Look at akljskdl ajsdlkjaslkdj asdkasdja dlkj alksjdlka 
+      jdlkajs kdja slkdja lks 
+      jdlkas jdlkajs dlkjsa lkd jaslkdjsald
+  HOT:
+    Info: Bunch by Bunch
+    Tips: Look at akljskdl ajsdlkjaslkdj
+BEMON: 
+  COLD:
+    Info: Bunch by Bunch
+    Tips: > 
+      Look at akljskdl ajsdlkjaslkdj asdkasdja dlkj alksjdlka 
+      jdlkajs kdja slkdja lks 
+      jdlkas jdlkajs dlkjsa lkd jaslkdjsald
+  HOT:
+    Info: Bunch by Bunch
+    Tips: Look at akljskdl ajsdlkjaslkdj
+DCCT:
+  COLD:
+    Info: Bunch by Bunch
+    Tips: > 
+      Look at akljskdl ajsdlkjaslkdj asdkasdja dlkj alksjdlka 
+      jdlkajs kdja slkdja lks 
+      jdlkas jdlkajs dlkjsa lkd jaslkdjsald
+  HOT:
+    Info: Bunch by Bunch
+    Tips: Look at akljskdl ajsdlkjaslkdj
+BUMP: 
+  COLD:
+    Info: Bunch by Bunch
+    Tips: > 
+      Look at akljskdl ajsdlkjaslkdj asdkasdja dlkj alksjdlka 
+      jdlkajs kdja slkdja lks 
+      jdlkas jdlkajs dlkjsa lkd jaslkdjsald
+CHOPPER: 
+  NONE:
+    Info: Bunch by Bunch
+    Tips: Look at akljskdl ajsdlkjaslkdj 
+TIMING: 
+  NONE:
+    Info: Bunch by Bunch
+    Tips: Look at akljskdl ajsdlkjaslkdj 
+FB:        
+  COLD:
+    Info: Bunch by Bunch
+    Tips: > 
+      Look at akljskdl ajsdlkjaslkdj asdkasdja dlkj alksjdlka 
+      jdlkajs kdja slkdja lks 
+      jdlkas jdlkajs dlkjsa lkd jaslkdjsald
+  HOT:
+    Info: Bunch by Bunch
+    Tips: Look at akljskdl ajsdlkjaslkdj
+KICKER: 
+  NONE:
+    Info: Multi Injection Kicker
+    Tips: Look at Set_Voltage and Set_Current for R3-A110210-CAB33/MAG/HVPS-01
+CAVITIES: 
+  COLD:
+    Info: Bunch by Bunch
+    Tips: > 
+      Look at akljskdl ajsdlkjaslkdj asdkasdja dlkj alksjdlka 
+      jdlkajs kdja slkdja lks 
+      jdlkas jdlkajs dlkjsa lkd jaslkdjsald
+  HOT:
+    Info: Bunch by Bunch
+    Tips: Look at akljskdl ajsdlkjaslkdj
+SCRAPERS: 
+  NONE:
+    Info: Horizontal -- [1 1]; Vertical -- [1 2] and [1 3] 
+    Tips: MATLAB command 'getsp('SCRAPER',[1 2],'Physics')' 
+STM: 
+  NONE:
+    Info: Bunch by Bunch
+    Tips: Look at akljskdl ajsdlkjaslkdj
+RF: 
+  COLD:
+    Info: Bunch by Bunch
+    Tips: > 
+      Look at akljskdl ajsdlkjaslkdj asdkasdja dlkj alksjdlka 
+      jdlkajs kdja slkdja lks 
+      jdlkas jdlkajs dlkjsa lkd jaslkdjsald
+  HOT:
+    Info: Bunch by Bunch
+    Tips: Look at akljskdl ajsdlkjaslkdj

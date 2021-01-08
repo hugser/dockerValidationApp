@@ -1,0 +1,119 @@
+{
+    "BBB": 
+    {
+        "COLD":
+        {
+            "Info": "Bunch by Bunch",
+            "Tips": "Look at akljskdl ajsdlkjaslkdj asdkasdja dlkj alksjdlka jdlkajs kdja slkdja lks 
+            jdlkas jdlkajs dlkjsa lkd jaslkdjsald"
+        },
+        "HOT":
+        {
+            "Info": "Bunch by Bunch",
+            "Tips": "Look at akljskdl ajsdlkjaslkdj"
+        }          
+    },
+    "BEMON": {
+        "COLD":
+        {
+            "Info": "Bunch by Bunch",
+            "Tips": "Look at akljskdl ajsdlkjaslkdj"
+        },
+        "HOT":
+        {
+            "Info": "Bunch by Bunch",
+            "Tips": "Look at akljskdl ajsdlkjaslkdj"
+        }          
+    },
+    "DCCT": {
+        "COLD":
+        {
+            "Info": "Bunch by Bunch",
+            "Tips": "Look at akljskdl ajsdlkjaslkdj"
+        },
+        "HOT":
+        {
+            "Info": "Bunch by Bunch",
+            "Tips": "Look at akljskdl ajsdlkjaslkdj"
+        }          
+    },
+    "BUMP": {
+        "COLD":
+        {
+            "Info": "Bunch by Bunch",
+            "Tips": "Look at akljskdl ajsdlkjaslkdj"
+        }
+              
+    },
+    "CHOPPER": {
+        "NONE":
+        {
+            "Info": "Bunch by Bunch",
+            "Tips": "Look at akljskdl ajsdlkjaslkdj"
+        }        
+    },
+    "TIMING": {
+        "NONE":
+        {
+            "Info": "Bunch by Bunch",
+            "Tips": "Look at akljskdl ajsdlkjaslkdj"
+        }   
+    },
+    "FB": {
+        "COLD":
+        {
+            "Info": "Bunch by Bunch",
+            "Tips": "Look at akljskdl ajsdlkjaslkdj"
+        },
+        "HOT":
+        {
+            "Info": "Bunch by Bunch",
+            "Tips": "Look at akljskdl ajsdlkjaslkdj"
+        }    
+    },
+    "KICKER": {
+        "NONE":
+        {
+            "Info": "Bunch by Bunch",
+            "Tips": "Look at akljskdl ajsdlkjaslkdj"
+        }   
+    },
+    "CAVITIES": {
+        "COLD":
+        {
+            "Info": "Bunch by Bunch",
+            "Tips": "Look at akljskdl ajsdlkjaslkdj"
+        },
+        "HOT":
+        {
+            "Info": "Bunch by Bunch",
+            "Tips": "Look at akljskdl ajsdlkjaslkdj"
+        }     
+    },
+    "SCRAPERS": {
+        "NONE":
+        {
+            "Info": "Bunch by Bunch",
+            "Tips": "Look at akljskdl ajsdlkjaslkdj"
+        }  
+    },
+    "STM": {
+        "NONE":
+        {
+            "Info": "Bunch by Bunch",
+            "Tips": "Look at akljskdl ajsdlkjaslkdj"
+        }  
+    },
+    "RF": {
+        "COLD":
+        {
+            "Info": "Bunch by Bunch",
+            "Tips": "Look at akljskdl ajsdlkjaslkdj"
+        },
+        "HOT":
+        {
+            "Info": "Bunch by Bunch",
+            "Tips": "Look at akljskdl ajsdlkjaslkdj"
+        }     
+    }
+}

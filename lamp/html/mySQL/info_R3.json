@@ -1,0 +1,136 @@
+{
+    "BBB-X": {
+        "FB Pattern": "FB_PATTERN", 
+        "Input File": "SRFILEIN", 
+        "SRAM peak Freq 1": "SRAM_PEAKFREQ1", 
+        "SRAM peak Freq 2": "SRAM_PEAKFREQ2", 
+        "State": "FBCTRL"
+    }, 
+    "BBB-Y": {
+        "FB Pattern": "FB_PATTERN", 
+        "Input File": "SRFILEIN", 
+        "SRAM peak Freq 1": "SRAM_PEAKFREQ1", 
+        "SRAM peak Freq 2": "SRAM_PEAKFREQ2", 
+        "State": "FBCTRL"
+    }, 
+    "BBB-Z": {
+        "FB Pattern": "FB_PATTERN", 
+        "Input File": "SRFILEIN", 
+        "SRAM peak Freq 1": "SRAM_PEAKFREQ1", 
+        "SRAM peak Freq 2": "SRAM_PEAKFREQ2", 
+        "State": "FBCTRL"
+    }, 
+    "BEMON": {
+        "Avg. Energy Spread": "EnergySpreadAverage", 
+        "Avg. Horizontal Emittance [pmrad]": "HorizontalEmittanceAverage", 
+        "Avg. Vertical Emittance [pmrad]": "VerticalEmittanceAverage", 
+        "Hor. Beam Size B105A [um]": "HorSigma1", 
+        "Hor. Beam Size B105B [um]": "HorSigma2", 
+        "Ver. Beam Size B105A [um]": "VerSigma1", 
+        "Ver. Beam Size B105B [um]": "VerSigma2"
+    }, 
+    "CHOPPER": {
+        "Amplifier Enable": "Ch10", 
+        "I 100 MHz": "Ch01", 
+        "I 300 MHz": "Ch03", 
+        "I 500 MHz": "Ch05", 
+        "I 700 MHz": "Ch07", 
+        "Q 100 MHz": "Ch02", 
+        "Q 300 MHz": "Ch04", 
+        "Q 500 MHz": "Ch06", 
+        "Q 700 MHz": "Ch08", 
+        "RF IN Select": "Ch09"
+    }, 
+    "DCCT": {
+        "Current [mA]": "Current", 
+        "Lifetime [h]": "Lifetime"
+    }, 
+    "GAP: BALDER": {
+        "Position": "position"
+    }, 
+    "GAP: BioMAX": {
+        "Position": "position"
+    }, 
+    "GAP: CoSAXS": {
+        "Position": "position"
+    }, 
+    "GAP: Hippie": {
+        "Position": "position"
+    }, 
+    "GAP: NamoMAX": {
+        "Position": "position"
+    }, 
+    "GAP: SoftiMAX": {
+        "Position": "position"
+    }, 
+    "GAP: Veritas": {
+        "Position": "position"
+    }, 
+    "KICKER": {
+        "Set Current [A]": "b.Set_Current", 
+        "Set Voltage [V]": "a.Set_Voltage"
+    }, 
+    "RF": {
+        "Frequency [MHz]": "frequency"
+    }, 
+    "SCR-[1 1]": {
+        "Position [Physics Unit]": "position"
+    }, 
+    "SCR-[1 2]": {
+        "Position [Physics Unit]": "position"
+    }, 
+    "SCR-[1 3]": {
+        "Position [Physics Unit]": "position"
+    }, 
+    "SPA": {
+        "Frequency Base": "FrequencyBase", 
+        "Wave form": "Waveform"
+    }, 
+    "STM": {
+        "Feedback": "R3UseFeedback", 
+        "Injections per Step": "R3InjPerStep", 
+        "Nr. of Buckets": "R3NrOfBuckets", 
+        "Snapshot": "R3Snapshot", 
+        "Step Length": "R3StepLength"
+    }, 
+    "TUMON": {
+        "Avg. Horizontal Tune": "TuneXaverage", 
+        "Avg. Vertical Tune": "TuneYaverage"
+    }, 
+    "Timing settings 1": {
+        "Out11_Delay": "Output11Delay", 
+        "Output00Delay_PMH": "Output00Delay", 
+        "Output01Delay_OSCEXT": "Output01Delay", 
+        "Output02Delay_MIK": "Output02Delay", 
+        "Output03Delay_Camera": "Output03Delay", 
+        "Output04Delay": "Output04Delay", 
+        "Output05Delay_MCEVENT": "Output05Delay", 
+        "Output06Delay_MC": "Output06Delay", 
+        "Output07Delay_MC": "Output07Delay", 
+        "Output08Delay": "Output08Delay", 
+        "Output08DelayFine": "Output08DelayFine", 
+        "Output09Delay": "Output09Delay", 
+        "Output09DelayFine": "Output09DelayFine", 
+        "Output10Delay": "Output10Delay", 
+        "Output10DelayFine": "Output10DelayFine", 
+        "Output11DelayFine": "Output11DelayFine"
+    }, 
+    "Timing settings 2": {
+        "Out00_Camera_Delay": "Output00Delay", 
+        "Out11_OptSampOsc_Delay": "Output11Delay", 
+        "Out11_OptSampOsc_DelayFine": "Output11DelayFine", 
+        "Output01Delay": "Output01Delay", 
+        "Output02Delay": "Output02Delay", 
+        "Output03Delay": "Output03Delay", 
+        "Output04Delay": "Output04Delay", 
+        "Output05Delay": "Output05Delay", 
+        "Output06Delay": "Output06Delay", 
+        "Output07Delay": "Output07Delay", 
+        "Output08Delay": "Output08Delay", 
+        "Output08DelayFine": "Output08DelayFine", 
+        "Output09Delay": "Output09Delay", 
+        "Output09DelayFine": "Output09DelayFine", 
+        "Output10Delay": "Output10Delay", 
+        "Output10DelayFine": "Output10DelayFine"
+    }
+}

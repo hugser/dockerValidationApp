@@ -1,0 +1,13 @@
+{
+    "MODULATORS": 
+    {
+        "property": {
+                "name": ["HV","FilCurr","State","Pressure_IP1"],
+                "type": ["float","float","bool","float"] 
+        },
+        "device":["K00","K01"],
+        "links": [["HV","K00","NONE","R1"]]
+                
+    }
+}
+ 

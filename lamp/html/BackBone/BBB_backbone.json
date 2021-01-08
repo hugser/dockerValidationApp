@@ -1,0 +1,46 @@
+{
+    "BBB": 
+    {
+        "property": {
+                "name": ["Avg_Horizontal_Tune","Avg_Vertical_Tune","FB_Pattern","Input_File","SRAM_peak_Freq_1","SRAM_peak_Freq_2","State"],
+                "type": ["float","float","str","str","float","float","bool"] 
+        },
+        "device":["TUMON","BBB_X","BBB_Y","BBB_Z"],
+        "links": [["Avg_Horizontal_Tune","TUMON","COLD","R1",1],
+                  ["Avg_Vertical_Tune","TUMON","COLD","R1",1],
+                  ["FB_Pattern","BBB_X","COLD","R1",1],
+                  ["Input_File","BBB_X","COLD","R1",1],
+                  ["SRAM_peak_Freq_1","BBB_X","COLD","R1",1],
+                  ["SRAM_peak_Freq_2","BBB_X","COLD","R1",1],
+                  ["State","BBB_X","COLD","R1",1],
+                  ["FB_Pattern","BBB_Y","COLD","R1",1],
+                  ["Input_File","BBB_Y","COLD","R1",1],
+                  ["SRAM_peak_Freq_1","BBB_Y","COLD","R1",1],
+                  ["SRAM_peak_Freq_2","BBB_Y","COLD","R1",1],
+                  ["State","BBB_Y","COLD","R1",1],
+                  ["FB_Pattern","BBB_Z","COLD","R1",1],
+                  ["Input_File","BBB_Z","COLD","R1",1],
+                  ["SRAM_peak_Freq_1","BBB_Z","COLD","R1",1],
+                  ["SRAM_peak_Freq_2","BBB_Z","COLD","R1",1],
+                  ["State","BBB_Z","COLD","R1",1],
+                  ["Avg_Horizontal_Tune","TUMON","HOT","R1",1],
+                  ["Avg_Vertical_Tune","TUMON","HOT","R1",1],
+                  ["FB_Pattern","BBB_X","COLD","R3",1],
+                  ["Input_File","BBB_X","COLD","R3",1],
+                  ["SRAM_peak_Freq_1","BBB_X","COLD","R3",1],
+                  ["SRAM_peak_Freq_2","BBB_X","COLD","R3",1],
+                  ["State","BBB_X","COLD","R3",1],
+                  ["FB_Pattern","BBB_Y","COLD","R3",1],
+                  ["Input_File","BBB_Y","COLD","R3",1],
+                  ["SRAM_peak_Freq_1","BBB_Y","COLD","R3",1],
+                  ["SRAM_peak_Freq_2","BBB_Y","COLD","R3",1],
+                  ["State","BBB_Y","COLD","R3",1],
+                  ["FB_Pattern","BBB_Z","COLD","R3",1],
+                  ["Input_File","BBB_Z","COLD","R3",1],
+                  ["SRAM_peak_Freq_1","BBB_Z","COLD","R3",1],
+                  ["SRAM_peak_Freq_2","BBB_Z","COLD","R3",1],
+                  ["State","BBB_Z","COLD","R3",1]]
+                
+    }
+}
+ 

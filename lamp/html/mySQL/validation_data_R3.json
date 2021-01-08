@@ -1,0 +1,305 @@
+{
+    "BBB-X": {
+        "FB Pattern": "81:91", 
+        "Input File": "20200210_TuneMon10Bunches250mA", 
+        "SRAM peak Freq 1": 70.33126068115234, 
+        "SRAM peak Freq 2": 119.87866973876953, 
+        "State": "FAILED"
+    }, 
+    "BBB-Y": {
+        "FB Pattern": "71:150 166:53", 
+        "Input File": "20200511_delivery", 
+        "SRAM peak Freq 1": 144.521240234375, 
+        "SRAM peak Freq 2": 146.6469268798828, 
+        "State": "FAILED"
+    }, 
+    "BBB-Z": {
+        "FB Pattern": "", 
+        "Input File": "20200121_JustMeasuring", 
+        "SRAM peak Freq 1": 0.6111116409301758, 
+        "SRAM peak Freq 2": 0.5807080864906311, 
+        "State": 0
+    }, 
+    "BEMON": {
+        "Avg. Energy Spread": 0.8514435299291943, 
+        "Avg. Horizontal Emittance [pmrad]": 380.73909909607016, 
+        "Avg. Vertical Emittance [pmrad]": 5.787351444997396, 
+        "Hor. Beam Size B105A [um]": 23.527804267416073, 
+        "Hor. Beam Size B105B [um]": 28.905838280318644, 
+        "Ver. Beam Size B105A [um]": 9.496665119298633, 
+        "Ver. Beam Size B105B [um]": 26.787890569043938
+    }, 
+    "BPM": {
+        "Interlock Disabled": [
+            "[1 3]: R3-301U1/DIA/BPM-01", 
+            "[7 9]: R3-307M2/DIA/BPM-01", 
+            "[8 5]: R3-308U3/DIA/BPM-01", 
+            "[11 7]: R3-311U4/DIA/BPM-01", 
+            "[11 9]: R3-311M2/DIA/BPM-01", 
+            "[14 10]: R3-314M2/DIA/BPM-02", 
+            "[16 5]: R3-316U3/DIA/BPM-01", 
+            "[16 6]: R3-316U3/DIA/BPM-02"
+        ]
+    }, 
+    "CHOPPER": {
+        "Amplifier Enable": 3.0, 
+        "I 100 MHz": 0.8650000095367432, 
+        "I 300 MHz": 0.5, 
+        "I 500 MHz": 0.4925000071525574, 
+        "I 700 MHz": 0.4925000071525574, 
+        "Q 100 MHz": 0.47749999165534973, 
+        "Q 300 MHz": 0.5, 
+        "Q 500 MHz": 0.5099999904632568, 
+        "Q 700 MHz": 0.5099999904632568, 
+        "RF IN Select": 5.0
+    }, 
+    "DCCT": {
+        "Current [mA]": 248.77971952797083, 
+        "Lifetime [h]": 24.270661327942502
+    }, 
+    "GAP: BALDER": {
+        "Position": 5.000004802364685
+    }, 
+    "GAP: BioMAX": {
+        "Position": 24.999794
+    }, 
+    "GAP: CoSAXS": {
+        "Position": 30.000003
+    }, 
+    "GAP: Hippie": {
+        "Position": 30.829613010204085
+    }, 
+    "GAP: NamoMAX": {
+        "Position": 5.202563
+    }, 
+    "GAP: SoftiMAX": {
+        "Position": 49.99999875668953
+    }, 
+    "GAP: Veritas": {
+        "Position": 14.299997761585479
+    }, 
+    "KICKER": {
+        "Set Current [A]": 280.0, 
+        "Set Voltage [V]": 6400.0
+    }, 
+    "LANDAU CAVITY 13": {
+        "Amplitude": 141.337, 
+        "Auto-Tuning": true, 
+        "Margin Low": 0.14954069643238624, 
+        "Margin Up": 0.7507553331095309, 
+        "Minimum Amplitude": 89.99908444471572, 
+        "Potentiometer": 5.008999824523926, 
+        "Temperature": 44.0
+    }, 
+    "LANDAU CAVITY 14": {
+        "Amplitude": 134.32500000000002, 
+        "Auto-Tuning": true, 
+        "Margin Low": 0.14954069643238624, 
+        "Margin Up": 0.7507553331095309, 
+        "Minimum Amplitude": 89.99908444471572, 
+        "Potentiometer": 4.454999923706055, 
+        "Temperature": 33.0
+    }, 
+    "LANDAU CAVITY 15": {
+        "Amplitude": 135.78991596638656, 
+        "Auto-Tuning": true, 
+        "Margin Low": 0.14954069643238624, 
+        "Margin Up": 0.7507553331095309, 
+        "Minimum Amplitude": 89.99908444471572, 
+        "Potentiometer": 4.375999927520752, 
+        "Temperature": 45.0
+    }, 
+    "MAIN CAVITY 01": {
+        "Amplitude": 190.77431378361157, 
+        "Phase": 152.00048829615162, 
+        "Potentiometer": 2.5189998149871826, 
+        "TX Forward power": 0.0, 
+        "Temperature": 50.0, 
+        "Tuning Offset": 2.999359111301004
+    }, 
+    "MAIN CAVITY 16": {
+        "Amplitude": 252.99206943801389, 
+        "Phase": 93.00210577715384, 
+        "Potentiometer": 4.913999557495117, 
+        "TX Forward power": 53.088445, 
+        "Temperature": 43.0, 
+        "Tuning Offset": 14.002502517777032
+    }, 
+    "MAIN CAVITY 17": {
+        "Amplitude": 363.958793577691, 
+        "Phase": 128.0001220740379, 
+        "Potentiometer": 4.9589996337890625, 
+        "TX Forward power": 55.462605, 
+        "Temperature": 31.0, 
+        "Tuning Offset": 79.99938962981048
+    }, 
+    "MAIN CAVITY 18": {
+        "Amplitude": 317.0190651599109, 
+        "Phase": -134.99862666707358, 
+        "Potentiometer": 4.956999778747559, 
+        "TX Forward power": 52.239625, 
+        "Temperature": 41.0, 
+        "Tuning Offset": -70.0015259254738
+    }, 
+    "MAIN CAVITY 19": {
+        "Amplitude": 457.9890204188757, 
+        "Phase": -17.001861629078036, 
+        "Potentiometer": 5.1489996910095215, 
+        "TX Forward power": 48.528855, 
+        "Temperature": 30.0, 
+        "Tuning Offset": -159.99877925962096
+    }, 
+    "MAIN CAVITY 20": {
+        "Amplitude": 233.99504872931914, 
+        "Phase": -102.00018311105686, 
+        "Potentiometer": 5.172999858856201, 
+        "TX Forward power": 55.975805, 
+        "Temperature": 38.0, 
+        "Tuning Offset": -22.000793481246376
+    }, 
+    "OB: BALDER": {
+        "Hor. Angle [urad]": 0.0, 
+        "Hor. Position [um]": 0.0, 
+        "Ver. Angle [urad]": -80.000000000000128, 
+        "Ver. Position [um]": 0.0
+    }, 
+    "OB: BioMAX": {
+        "Hor. Angle [urad]": 0.0, 
+        "Hor. Position [um]": 0.0, 
+        "Ver. Angle [urad]": -68.000000000000114, 
+        "Ver. Position [um]": 0.0
+    }, 
+    "OB: CoSAXS": {
+        "Hor. Angle [urad]": -75.0, 
+        "Hor. Position [um]": 0.0, 
+        "Ver. Angle [urad]": -29.999999999999996, 
+        "Ver. Position [um]": -40.0
+    }, 
+    "OB: Hippie": {
+        "Hor. Angle [urad]": -10.000000000000016, 
+        "Hor. Position [um]": 0.0, 
+        "Ver. Angle [urad]": -10.000000000000016, 
+        "Ver. Position [um]": 0.0
+    }, 
+    "OB: MIK": {
+        "Hor. Angle [urad]": 0.0, 
+        "Hor. Position [um]": 0.0, 
+        "Ver. Angle [urad]": 0.0, 
+        "Ver. Position [um]": 0.0
+    }, 
+    "OB: NamoMAX": {
+        "Hor. Angle [urad]": -25.0, 
+        "Hor. Position [um]": 0.0, 
+        "Ver. Angle [urad]": -50.0, 
+        "Ver. Position [um]": -20.000019999999967
+    }, 
+    "OB: SoftiMAX": {
+        "Hor. Angle [urad]": -35.0, 
+        "Hor. Position [um]": 0.0, 
+        "Ver. Angle [urad]": 0.0, 
+        "Ver. Position [um]": 0.0
+    }, 
+    "OB: Veritas": {
+        "Hor. Angle [urad]": 20.0, 
+        "Hor. Position [um]": 0.0, 
+        "Ver. Angle [urad]": 59.999999999999993, 
+        "Ver. Position [um]": 0.0
+    }, 
+    "RF": {
+        "Frequency [MHz]": 99.93099617
+    }, 
+    "SCR-[1 1]": {
+        "Position [Physics Unit]": 29.518768309039356
+    }, 
+    "SCR-[1 2]": {
+        "Position [Physics Unit]": 2.1022988030509993
+    }, 
+    "SCR-[1 3]": {
+        "Position [Physics Unit]": 1.9017279927598238
+    }, 
+    "SOFB-01": {
+        "Actuator Names": [], 
+        "Gain": 0.3, 
+        "Max Singular Value": 193, 
+        "RF Correction": true, 
+        "Req. Correction Frequency": 15.0, 
+        "Sensor Names": [
+            "[1 3]: R3-301U1/DIA/BPM-01", 
+            "[8 5]: R3-308U3/DIA/BPM-01", 
+            "[11 7]: R3-311U4/DIA/BPM-01", 
+            "[11 9]: R3-311M2/DIA/BPM-01", 
+            "[14 10]: R3-314M2/DIA/BPM-02", 
+            "[16 5]: R3-316U3/DIA/BPM-01", 
+            "[16 6]: R3-316U3/DIA/BPM-02"
+        ], 
+        "Status": "Correction is being calculated and applied, but correction frequency is below requested value!"
+    }, 
+    "SOFB-02": {
+        "Actuator Names": [], 
+        "Gain": 0.3, 
+        "Max Singular Value": 172, 
+        "Req. Correction Frequency": 15.0, 
+        "Sensor Names": [
+            "[1 3]: R3-301U1/DIA/BPM-01", 
+            "[7 5]: R3-307U3/DIA/BPM-01", 
+            "[7 9]: R3-307M2/DIA/BPM-01", 
+            "[8 5]: R3-308U3/DIA/BPM-01", 
+            "[11 7]: R3-311U4/DIA/BPM-01", 
+            "[11 9]: R3-311M2/DIA/BPM-01", 
+            "[14 10]: R3-314M2/DIA/BPM-02", 
+            "[16 6]: R3-316U3/DIA/BPM-02"
+        ], 
+        "Status": "Correction is being calculated and applied, but correction frequency is below requested value!"
+    }, 
+    "SPA": {
+        "Frequency Base": "FAILED", 
+        "Wave form": "FAILED"
+    }, 
+    "STM": {
+        "Feedback": false, 
+        "Injections per Step": 1.0, 
+        "Nr. of Buckets": 166.0, 
+        "Snapshot": 5042.0, 
+        "Step Length": 7.0
+    }, 
+    "TUMON": {
+        "Avg. Horizontal Tune": 0.2012201944986979, 
+        "Avg. Vertical Tune": 0.25992266666666664
+    }, 
+    "Timing settings 1": {
+        "Out11_Delay": 140, 
+        "Output00Delay_PMH": 18241, 
+        "Output01Delay_OSCEXT": 18381, 
+        "Output02Delay_MIK": 18141, 
+        "Output03Delay_Camera": 15110, 
+        "Output04Delay": 0, 
+        "Output05Delay_MCEVENT": 3, 
+        "Output06Delay_MC": 0, 
+        "Output07Delay_MC": 0, 
+        "Output08Delay": 0, 
+        "Output08DelayFine": 0, 
+        "Output09Delay": 0, 
+        "Output09DelayFine": 0, 
+        "Output10Delay": 78, 
+        "Output10DelayFine": 930, 
+        "Output11DelayFine": 320
+    }, 
+    "Timing settings 2": {
+        "Out00_Camera_Delay": 15110, 
+        "Out11_OptSampOsc_Delay": 111, 
+        "Out11_OptSampOsc_DelayFine": 440, 
+        "Output01Delay": 0, 
+        "Output02Delay": 0, 
+        "Output03Delay": 0, 
+        "Output04Delay": 0, 
+        "Output05Delay": 0, 
+        "Output06Delay": 0, 
+        "Output07Delay": 0, 
+        "Output08Delay": 0, 
+        "Output08DelayFine": 0, 
+        "Output09Delay": 0, 
+        "Output09DelayFine": 0, 
+        "Output10Delay": 57, 
+        "Output10DelayFine": 250
+    }
+}

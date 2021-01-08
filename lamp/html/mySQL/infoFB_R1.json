@@ -1,0 +1,25 @@
+{
+    "FB-03": {
+        "Gain": "gain", 
+        "Max Singular Value": "apply_max_singular_value", 
+        "Req. Correction Frequency": "requested_correction_frequency", 
+        "Status": "Status"
+    }, 
+    "SOFB-01": {
+        "Actuator Names": "actuator_names", 
+        "Gain": "gain", 
+        "Max Singular Value": "apply_max_singular_value", 
+        "RF Correction": "apply_rf_correction", 
+        "Req. Correction Frequency": "requested_correction_frequency", 
+        "Sensor Names": "sensor_names", 
+        "Status": "Status"
+    }, 
+    "SOFB-02": {
+        "Actuator Names": "actuator_names", 
+        "Gain": "gain", 
+        "Max Singular Value": "apply_max_singular_value", 
+        "Req. Correction Frequency": "requested_correction_frequency", 
+        "Sensor Names": "sensor_names", 
+        "Status": "Status"
+    }
+}

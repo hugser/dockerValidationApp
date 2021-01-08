@@ -1,0 +1,1396 @@
+{
+    "BBB": {
+        "TUMON": {
+            "Avg. Horizontal Tune": {
+                "digits": 5, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.2012201944986979
+            }, 
+            "Avg. Vertical Tune": {
+                "digits": 5, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.25992266666666664
+            }
+        }, 
+        "X": {
+            "FB Pattern": {
+                "inputForm": "String", 
+                "value": "FAILED"
+            }, 
+            "Input File": {
+                "inputForm": "String", 
+                "value": "FAILED"
+            }, 
+            "SRAM peak Freq 1": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": "FAILED"
+            }, 
+            "SRAM peak Freq 2": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": "FAILED"
+            }, 
+            "State": {
+                "inputForm": "ON/OFF", 
+                "value": "FAILED"
+            }
+        }, 
+        "Y": {
+            "FB Pattern": {
+                "inputForm": "String", 
+                "value": "FAILED"
+            }, 
+            "Input File": {
+                "inputForm": "String", 
+                "value": "FAILED"
+            }, 
+            "SRAM peak Freq 1": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": "FAILED"
+            }, 
+            "SRAM peak Freq 2": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": "FAILED"
+            }, 
+            "State": {
+                "inputForm": "ON/OFF", 
+                "value": "FAILED"
+            }
+        }, 
+        "Z": {
+            "FB Pattern": {
+                "inputForm": "String", 
+                "value": ""
+            }, 
+            "Input File": {
+                "inputForm": "String", 
+                "value": "20200121_JustMeasuring"
+            }, 
+            "SRAM peak Freq 1": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.5720767974853516
+            }, 
+            "SRAM peak Freq 2": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.5720767974853516
+            }, 
+            "State": {
+                "inputForm": "ON/OFF", 
+                "value": 0
+            }
+        }
+    }, 
+    "BEAM MONITOR": {
+        "BEMON": {
+            "Avg. Energy Spread": {
+                "digits": 4, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.8198435785644057
+            }, 
+            "Avg. Horizontal Emittance [pmrad]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 400.89066494772436
+            }, 
+            "Avg. Vertical Emittance [pmrad]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 7.44823659488833
+            }, 
+            "Hor. Beam Size B105A [um]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 24.219375674512406
+            }, 
+            "Hor. Beam Size B105B [um]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 28.838471682095687
+            }, 
+            "Ver. Beam Size B105A [um]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 10.693232969196059
+            }, 
+            "Ver. Beam Size B105B [um]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 21.74780547479187
+            }
+        }
+    }, 
+    "Beam Position Monitor": {
+        "BPM": {
+            "Interlock Disabled": {
+                "inputForm": "Array_String", 
+                "value": [
+                    "R3-301L/DIA/BPM-01", 
+                    "R3-301U1/DIA/BPM-01", 
+                    "R3-307M2/DIA/BPM-01", 
+                    "R3-308U3/DIA/BPM-01", 
+                    "R3-311M2/DIA/BPM-01", 
+                    "R3-311U4/DIA/BPM-01", 
+                    "R3-314M2/DIA/BPM-02", 
+                    "R3-316U3/DIA/BPM-01", 
+                    "R3-316U3/DIA/BPM-02"
+                ]
+            }
+        }
+    }, 
+    "Beam Properties": {
+        "DCCT": {
+            "Current [mA]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 250.07869320255944
+            }, 
+            "Lifetime [h]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 25.430125140337278
+            }
+        }
+    }, 
+    "Beamline Bumps": {
+        "BALDER": {
+            "Hor. Angle [urad]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 0.0
+            }, 
+            "Hor. Position [um]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 0.0
+            }, 
+            "Ver. Angle [urad]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": -80.000000000000128
+            }, 
+            "Ver. Position [um]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 0.0
+            }
+        }, 
+        "BioMAX": {
+            "Hor. Angle [urad]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 0.0
+            }, 
+            "Hor. Position [um]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 0.0
+            }, 
+            "Ver. Angle [urad]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": -68.000000000000114
+            }, 
+            "Ver. Position [um]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 0.0
+            }
+        }, 
+        "CoSAXS": {
+            "Hor. Angle [urad]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": -35.00000000000005
+            }, 
+            "Hor. Position [um]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 0.0
+            }, 
+            "Ver. Angle [urad]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": -30.00000000000005
+            }, 
+            "Ver. Position [um]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 0.0
+            }
+        }, 
+        "Hippie": {
+            "Hor. Angle [urad]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": -10.000000000000016
+            }, 
+            "Hor. Position [um]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 0.0
+            }, 
+            "Ver. Angle [urad]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": -10.000000000000016
+            }, 
+            "Ver. Position [um]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 0.0
+            }
+        }, 
+        "MIK": {
+            "Hor. Angle [urad]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 0.0
+            }, 
+            "Hor. Position [um]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 0.0
+            }, 
+            "Ver. Angle [urad]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 0.0
+            }, 
+            "Ver. Position [um]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 31.0
+            }
+        }, 
+        "NamoMAX": {
+            "Hor. Angle [urad]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": -25.0
+            }, 
+            "Hor. Position [um]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 0.0
+            }, 
+            "Ver. Angle [urad]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": -50.0
+            }, 
+            "Ver. Position [um]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": -20.000019999999967
+            }
+        }, 
+        "SoftiMAX": {
+            "Hor. Angle [urad]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 0.0
+            }, 
+            "Hor. Position [um]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 0.0
+            }, 
+            "Ver. Angle [urad]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 0.0
+            }, 
+            "Ver. Position [um]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 0.0
+            }
+        }, 
+        "Veritas": {
+            "Hor. Angle [urad]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": -40.0
+            }, 
+            "Hor. Position [um]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 0.0
+            }, 
+            "Ver. Angle [urad]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 30.00000000000005
+            }, 
+            "Ver. Position [um]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "value": 0.0
+            }
+        }
+    }, 
+    "Devices Attributes": {
+        "CHOPPER": {
+            "Amplifier Enable": {
+                "digits": 3, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 3.0
+            }, 
+            "I 100 MHz": {
+                "digits": 3, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.8650000095367432
+            }, 
+            "I 300 MHz": {
+                "digits": 3, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.5
+            }, 
+            "I 500 MHz": {
+                "digits": 3, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.4925000071525574
+            }, 
+            "I 700 MHz": {
+                "digits": 3, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.4925000071525574
+            }, 
+            "Q 100 MHz": {
+                "digits": 3, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.47749999165534973
+            }, 
+            "Q 300 MHz": {
+                "digits": 3, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.5
+            }, 
+            "Q 500 MHz": {
+                "digits": 3, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.5099999904632568
+            }, 
+            "Q 700 MHz": {
+                "digits": 3, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.5099999904632568
+            }, 
+            "RF IN Select": {
+                "digits": 3, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 5.0
+            }
+        }, 
+        "Timing settings 1": {
+            "Out11_Delay": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 140
+            }, 
+            "Output00Delay_PMH": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 18241
+            }, 
+            "Output01Delay_OSCEXT": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 18381
+            }, 
+            "Output02Delay_MIK": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 18141
+            }, 
+            "Output03Delay_Camera": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 15110
+            }, 
+            "Output04Delay": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 0
+            }, 
+            "Output05Delay_MCEVENT": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 3
+            }, 
+            "Output06Delay_MC": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 0
+            }, 
+            "Output07Delay_MC": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 0
+            }, 
+            "Output08Delay": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 0
+            }, 
+            "Output08DelayFine": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 0
+            }, 
+            "Output09Delay": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 0
+            }, 
+            "Output09DelayFine": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 0
+            }, 
+            "Output10Delay": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 78
+            }, 
+            "Output10DelayFine": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 930
+            }, 
+            "Output11DelayFine": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 320
+            }
+        }, 
+        "Timing settings 2": {
+            "Out00_Camera_Delay": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 15110
+            }, 
+            "Out11_OptSampOsc_Delay": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 111
+            }, 
+            "Out11_OptSampOsc_DelayFine": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 440
+            }, 
+            "Output01Delay": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 0
+            }, 
+            "Output02Delay": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 0
+            }, 
+            "Output03Delay": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 0
+            }, 
+            "Output04Delay": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 0
+            }, 
+            "Output05Delay": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 0
+            }, 
+            "Output06Delay": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 0
+            }, 
+            "Output07Delay": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 0
+            }, 
+            "Output08Delay": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 0
+            }, 
+            "Output08DelayFine": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 0
+            }, 
+            "Output09Delay": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 0
+            }, 
+            "Output09DelayFine": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 0
+            }, 
+            "Output10Delay": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 57
+            }, 
+            "Output10DelayFine": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 250
+            }
+        }
+    }, 
+    "FEEDBACK": {
+        "SOFB-01": {
+            "Gain": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.3
+            }, 
+            "Max Singular Value": {
+                "inputForm": "Int", 
+                "max": 200, 
+                "min": 0, 
+                "value": 193
+            }, 
+            "RF Correction": {
+                "inputForm": "ON/OFF", 
+                "value": true
+            }, 
+            "Req. Correction Frequency": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 5.0
+            }, 
+            "Sensor Names": {
+                "inputForm": "Array_String", 
+                "value": [
+                    "R3-301L/DIA/BPM-01", 
+                    "R3-301U1/DIA/BPM-01", 
+                    "R3-308U3/DIA/BPM-01", 
+                    "R3-311M2/DIA/BPM-01", 
+                    "R3-311U4/DIA/BPM-01", 
+                    "R3-314M2/DIA/BPM-02", 
+                    "R3-316U3/DIA/BPM-01", 
+                    "R3-316U3/DIA/BPM-02"
+                ]
+            }, 
+            "Status": {
+                "inputForm": "String", 
+                "value": "Correction is being calculated and applied"
+            }
+        }, 
+        "SOFB-02": {
+            "Gain": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.3
+            }, 
+            "Max Singular Value": {
+                "inputForm": "Int", 
+                "max": 200, 
+                "min": 0, 
+                "value": 172
+            }, 
+            "Req. Correction Frequency": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 5.0
+            }, 
+            "Sensor Names": {
+                "inputForm": "Array_String", 
+                "value": [
+                    "R3-301L/DIA/BPM-01", 
+                    "R3-301U1/DIA/BPM-01", 
+                    "R3-307M2/DIA/BPM-01", 
+                    "R3-307U3/DIA/BPM-01", 
+                    "R3-308U3/DIA/BPM-01", 
+                    "R3-311M2/DIA/BPM-01", 
+                    "R3-311U4/DIA/BPM-01", 
+                    "R3-314M2/DIA/BPM-02", 
+                    "R3-316U3/DIA/BPM-02"
+                ]
+            }, 
+            "Status": {
+                "inputForm": "String", 
+                "value": "Correction is being calculated and applied"
+            }
+        }
+    }, 
+    "Injection Magnet": {
+        "KICKER": {
+            "Set Current [A]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": "FAILED"
+            }, 
+            "Set Voltage [V]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 6400.0
+            }
+        }
+    }, 
+    "RF Cavities": {
+        "LANDAU CAVITY 13": {
+            "Amplitude": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 141.337
+            }, 
+            "Margin Low": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.14954069643238624
+            }, 
+            "Margin Up": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.7507553331095309
+            }, 
+            "Minimum Amplitude": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 89.99908444471572
+            }, 
+            "Potentiometer": {
+                "digits": 3, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 5.031999588012695
+            }, 
+            "Temperature": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 44.0
+            }
+        }, 
+        "LANDAU CAVITY 14": {
+            "Amplitude": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 134.32500000000002
+            }, 
+            "Margin Low": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.14954069643238624
+            }, 
+            "Margin Up": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.7507553331095309
+            }, 
+            "Minimum Amplitude": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 89.99908444471572
+            }, 
+            "Potentiometer": {
+                "digits": 3, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 4.472999572753906
+            }, 
+            "Temperature": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 33.0
+            }
+        }, 
+        "LANDAU CAVITY 15": {
+            "Amplitude": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 135.78991596638656
+            }, 
+            "Margin Low": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.14954069643238624
+            }, 
+            "Margin Up": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.7507553331095309
+            }, 
+            "Minimum Amplitude": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 89.99908444471572
+            }, 
+            "Potentiometer": {
+                "digits": 3, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 4.400999546051025
+            }, 
+            "Temperature": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 45.0
+            }
+        }, 
+        "MAIN CAVITY 01": {
+            "Amplitude": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 190.77431378361157
+            }, 
+            "Phase": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 152.00048829615162
+            }, 
+            "Potentiometer": {
+                "digits": 3, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 2.4739997386932373
+            }, 
+            "TX Forward power": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 0.0
+            }, 
+            "Temperature": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 50.0
+            }, 
+            "Tuning Offset": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 2.999359111301004
+            }
+        }, 
+        "MAIN CAVITY 16": {
+            "Amplitude": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 252.99206943801389
+            }, 
+            "Phase": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 93.00210577715384
+            }, 
+            "Potentiometer": {
+                "digits": 3, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 4.941999435424805
+            }, 
+            "TX Forward power": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 53.826945
+            }, 
+            "Temperature": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 43.0
+            }, 
+            "Tuning Offset": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 14.002502517777032
+            }
+        }, 
+        "MAIN CAVITY 17": {
+            "Amplitude": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 363.958793577691
+            }, 
+            "Phase": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 128.0001220740379
+            }, 
+            "Potentiometer": {
+                "digits": 3, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 4.98699951171875
+            }, 
+            "TX Forward power": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 56.234137
+            }, 
+            "Temperature": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 31.0
+            }, 
+            "Tuning Offset": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 79.99938962981048
+            }
+        }, 
+        "MAIN CAVITY 18": {
+            "Amplitude": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 316.9688084913694
+            }, 
+            "Phase": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": -134.99862666707358
+            }, 
+            "Potentiometer": {
+                "digits": 3, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 4.98099946975708
+            }, 
+            "TX Forward power": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 52.480707
+            }, 
+            "Temperature": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 41.0
+            }, 
+            "Tuning Offset": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": -70.0015259254738
+            }
+        }, 
+        "MAIN CAVITY 19": {
+            "Amplitude": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 457.9890204188757
+            }, 
+            "Phase": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": -17.001861629078036
+            }, 
+            "Potentiometer": {
+                "digits": 3, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 5.149999618530273
+            }, 
+            "TX Forward power": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 48.977898
+            }, 
+            "Temperature": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 30.0
+            }, 
+            "Tuning Offset": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": -159.99877925962096
+            }
+        }, 
+        "MAIN CAVITY 20": {
+            "Amplitude": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 233.99504872931914
+            }, 
+            "Phase": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": -102.00018311105686
+            }, 
+            "Potentiometer": {
+                "digits": 3, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 5.197999477386475
+            }, 
+            "TX Forward power": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 56.234137
+            }, 
+            "Temperature": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 38.0
+            }, 
+            "Tuning Offset": {
+                "digits": 1, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": -22.000793481246376
+            }
+        }
+    }, 
+    "Ring Optical Properties": {
+        "RF": {
+            "Frequency [MHz]": {
+                "digits": 6, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 99.93102286
+            }
+        }
+    }, 
+    "SCRAPER": {
+        "SCR-[1 1]": {
+            "Position [Physics Unit]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 29.480654767564534
+            }
+        }, 
+        "SCR-[1 2]": {
+            "Position [Physics Unit]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 1.9408636763114977
+            }
+        }, 
+        "SCR-[1 3]": {
+            "Position [Physics Unit]": {
+                "digits": 2, 
+                "inputForm": "Float", 
+                "lowerErrorFair": 0.1, 
+                "lowerErrorGood": 0.05, 
+                "upperErrorFair": 0.1, 
+                "upperErrorGood": 0.05, 
+                "value": 1.9890034834878456
+            }
+        }
+    }, 
+    "STATE MACHINE": {
+        "STM": {
+            "Feedback": {
+                "inputForm": "ON/OFF", 
+                "value": false
+            }, 
+            "Injections per Step": {
+                "inputForm": "Int", 
+                "max": 10, 
+                "min": 1, 
+                "value": 1.0
+            }, 
+            "Nr. of Buckets": {
+                "inputForm": "Int", 
+                "max": 176, 
+                "min": 1, 
+                "value": 166.0
+            }, 
+            "Snapshot": {
+                "inputForm": "Int", 
+                "max": 10000000000.0, 
+                "min": 0, 
+                "value": 4979.0
+            }, 
+            "Step Length": {
+                "inputForm": "Int", 
+                "max": 10, 
+                "min": 0, 
+                "value": 7.0
+            }
+        }
+    }
+}

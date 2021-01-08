@@ -1,0 +1,259 @@
+{
+    "verVALIDATION": {
+        "ver":  "Ver400mA_26",
+        "stamp": "2020-07-02 13:12:13",
+        "comment": "This is the 4th comment! Bleu Bleu Bleu"
+    },
+    "VALIDATION": {
+        "_info":  [["R1","NONE","Ver400mA_26"],
+                   ["R1","COLD","Ver400mA_26"],
+                   ["R1","HOT","Ver400mA_26"]]
+    },
+    "BPM_VALIDATION": {
+        "_info": [["R1","NONE","Ver400mA_26","BPM","Interlock_Disabled",
+                ["[1 1]: R1-101/DIA/BPM-01","[2 1]: R1-102/DIA/BPM-01","[3 2]: R1-103/DIA/BPM-02","[5 2]: R1-105/DIA/BPM-02","[6 1]: R1-106/DIA/BPM-01","[6 2]: R1-106/DIA/BPM-02","[6 3]: R1-106/DIA/BPM-03"],
+                "NA","NA"],
+                  ["R1","NONE","Ver400mA_26","BPM","AGC_Disabled",
+            ["[6 1]: R1-106/DIA/BPM-01","[6 2]: R1-106/DIA/BPM-02","[6 3]: R1-106/DIA/BPM-03"],
+            "NA","NA"]]
+    },
+    "BBB_VALIDATION": {
+        "_info": [
+            ["R1","COLD","Ver400mA_26","TUMON","Avg_Horizontal_Tune",
+                0.2850,"[0,1]","[0.05,0.1,0.05,0.1]"],
+            ["R1","COLD","Ver400mA_26","TUMON","Avg_Vertical_Tune",
+                0.1250,"[0,1]","[0.05,0.1,0.05,0.1]"], 
+            ["R1","COLD","Ver400mA_26","BBB_X","FB_Pattern","!","NA","NA"],
+            ["R1","COLD","Ver400mA_26","BBB_X","Input_File","FAILED","NA","NA"],
+            ["R1","COLD","Ver400mA_26","BBB_X","SRAM_peak_Freq_1", 
+                890.37,"[0,1e4]","[0.05,0.1,0.05,0.1]"],
+            ["R1","COLD","Ver400mA_26","BBB_X","SRAM_peak_Freq_2",
+                890.37,"[0,1e4]","[0.05,0.1,0.05,0.1]"],
+            ["R1","COLD","Ver400mA_26","BBB_X","State",
+                true,"NA","NA"],
+            ["R1","COLD","Ver400mA_26","BBB_Y","FB_Pattern","20200912_NEWfile_22300","NA","NA"],
+            ["R1","COLD","Ver400mA_26","BBB_Y","Input_File","12,34","NA","NA"],
+            ["R1","COLD","Ver400mA_26","BBB_Y","SRAM_peak_Freq_1",
+                390.65,"[0,1e4]","[0.05,0.1,0.05,0.1]"],
+            ["R1","COLD","Ver400mA_26","BBB_Y","SRAM_peak_Freq_2",
+                390.65,"[0,1e4]","[0.05,0.1,0.05,0.1]"],
+            ["R1","COLD","Ver400mA_26","BBB_Y","State",
+                true,"NA","NA"],
+            ["R1","COLD","Ver400mA_26","BBB_Z","FB_Pattern","34,56","NA","NA"],
+            ["R1","COLD","Ver400mA_26","BBB_Z","Input_File","FAILED","NA","NA"],
+            ["R1","COLD","Ver400mA_26","BBB_Z","SRAM_peak_Freq_1",
+                6.13,"[0,1e4]","[0.05,0.1,0.05,0.1]"],
+            ["R1","COLD","Ver400mA_26","BBB_Z","SRAM_peak_Freq_2",
+                6.13,"[0,1e4]","[0.05,0.1,0.05,0.1]"],
+            ["R1","COLD","Ver400mA_26","BBB_Z","State",
+                false,"NA","NA"],
+            ["R1","HOT","Ver400mA_26","TUMON","Avg_Horizontal_Tune",
+                0.2850,"[0,1]","[0.05,0.1,0.05,0.1]"],
+            ["R1","HOT","Ver400mA_26","TUMON","Avg_Vertical_Tune",
+                0.1250,"[0,1]","[0.05,0.1,0.05,0.1]"]
+        ]
+    },
+    "BEMON_VALIDATION": {
+        "_info": [
+            ["R1","COLD","Ver400mA_26","BEMON","Avg_Energy_Spread",0.600,"[0,1e2]","[0.05,0.1,0.05,0.1]"],
+            ["R1","COLD","Ver400mA_26","BEMON","Avg_Horizontal_Emittance",6697.20,"[0,1e4]","[0.05,0.1,0.05,0.1]"],
+            ["R1","COLD","Ver400mA_26","BEMON","Avg_Vertical_Emittance",27.48,"[0,1e2]","[0.05,0.1,0.05,0.1]"],
+            ["R1","COLD","Ver400mA_26","OptLine_1","Hor_Beam_Size",111.92,"[0,1e3]","[0.05,0.1,0.05,0.1]"],
+            ["R1","COLD","Ver400mA_26","OptLine_1","Ver_Beam_Size",16.78,"[0,1e3]","[0.05,0.1,0.05,0.1]"],
+            ["R1","COLD","Ver400mA_26","OptLine_2","Hor_Beam_Size",44.91,"[0,1e3]","[0.05,0.1,0.05,0.1]"],
+            ["R1","COLD","Ver400mA_26","OptLine_2","Ver_Beam_Size",21.47,"[0,1e3]","[0.05,0.1,0.05,0.1]"],
+            ["R1","HOT","Ver400mA_26","BEMON","Avg_Energy_Spread",0.600,"[0,1e2]","[0.05,0.1,0.05,0.1]"],
+            ["R1","HOT","Ver400mA_26","BEMON","Avg_Horizontal_Emittance",6697.20,"[0,1e3]","[0.05,0.1,0.05,0.1]"],
+            ["R1","HOT","Ver400mA_26","BEMON","Avg_Vertical_Emittance",27.48,"[0,1e2]","[0.05,0.1,0.05,0.1]"],
+            ["R1","HOT","Ver400mA_26","OptLine_1","Hor_Beam_Size",111.92,"[0,1e3]","[0.05,0.1,0.05,0.1]"],
+            ["R1","HOT","Ver400mA_26","OptLine_1","Ver_Beam_Size",16.78,"[0,1e3]","[0.05,0.1,0.05,0.1]"],
+            ["R1","HOT","Ver400mA_26","OptLine_2","Hor_Beam_Size",44.91,"[0,1e3]","[0.05,0.1,0.05,0.1]"],
+            ["R1","HOT","Ver400mA_26","OptLine_2","Ver_Beam_Size",21.22,"[0,1e3]","[0.05,0.1,0.05,0.1]"]
+        ]
+    },
+    "DCCT_VALIDATION": {
+        "_info": [
+            ["R1","COLD","Ver400mA_26","DCCT","Current",3.00,"[0,4.50]","[0.05,0.1,0.05,0.1]"],
+            ["R1","COLD","Ver400mA_26","DCCT","Lifetime",400.00,"[0,500]","[0.05,0.1,0.05,0.1]"]
+        ]
+    },
+    "BUMP_VALIDATION": {
+        "_info": [
+            ["R1","COLD","Ver400mA_26","FlexPES","Hor_Angle",0.00,"[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","COLD","Ver400mA_26","FlexPES","Hor_Position",0.00,"[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","COLD","Ver400mA_26","FlexPES","Ver_Angle",0.00,"[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","COLD","Ver400mA_26","FlexPES","Ver_Position",0.00,"[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","COLD","Ver400mA_26","Species","Hor_Angle",0.00,"[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","COLD","Ver400mA_26","Species","Hor_Position",0.00,"[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","COLD","Ver400mA_26","Species","Ver_Angle",10.00,"[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","COLD","Ver400mA_26","Species","Ver_Position",0.00,"[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","COLD","Ver400mA_26","Bloch","Hor_Angle",0.00,"[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","COLD","Ver400mA_26","Bloch","Hor_Position",-12.41,"[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","COLD","Ver400mA_26","Bloch","Ver_Angle",0.00,"[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","COLD","Ver400mA_26","Bloch","Ver_Position",0.00,"[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","COLD","Ver400mA_26","MaxPEEM","Hor_Angle",0.00,"[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","COLD","Ver400mA_26","MaxPEEM","Hor_Position",0.00,"[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","COLD","Ver400mA_26","MaxPEEM","Ver_Angle",77.47,"[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","COLD","Ver400mA_26","MaxPEEM","Ver_Position",-76.65,"[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","COLD","Ver400mA_26","FinEst","Hor_Angle",1.12,"[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","COLD","Ver400mA_26","FinEst","Hor_Position",2.60,"[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","COLD","Ver400mA_26","FinEst","Ver_Angle",-62.20,"[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","COLD","Ver400mA_26","FinEst","Ver_Position",-22.20,"[-200,200]","[0.01,0.02,0.01,0.02]"]
+        ]
+    },
+    "CHOPPER_VALIDATION": {
+        "_info": [
+            ["R1","NONE","Ver400mA_26","CHOPPER","Amplifier_Enable",3.0,"[0,10]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","CHOPPER","I_100_MHz",0.8650,"[0,1]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","CHOPPER","I_300_MHz",0.5000,"[0,1]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","CHOPPER","I_500_MHz",0.4925,"[0,1]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","CHOPPER","I_700_MHz",0.4925,"[0,1]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","CHOPPER","Q_100_MHz",0.4775,"[0,1]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","CHOPPER","Q_300_MHz",0.5000,"[0,1]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","CHOPPER","Q_500_MHz",0.5010,"[0,1]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","CHOPPER","Q_700_MHz",0.5010,"[0,1]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","CHOPPER","RF_IN_Select",5.0,"[0,10]","[0.01,0.02,0.01,0.02]"]
+        ]
+    },
+    "TIMING_VALIDATION": {
+        "_info": [
+            ["R1","NONE","Ver400mA_26","TIMING_1","Out11_Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_1","Output00Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_1","Output01Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_1","Output02Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_1","Output03Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_1","Output04Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_1","Output05Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_1","Output06Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_1","Output07Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_1","Output08Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_1","Output08DelayFine","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_1","Output09Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_1","Output09DelayFine","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_1","Output10Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_1","Output10DelayFine","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_1","Output11DelayFine","val","[-200,200]","[0.01,0.02,0.01,0.02]"],       
+            ["R1","NONE","Ver400mA_26","TIMING_2","Out11_Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_2","Output00Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_2","Output01Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_2","Output02Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_2","Output03Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_2","Output04Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_2","Output05Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_2","Output06Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_2","Output07Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_2","Output08Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_2","Output08DelayFine","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_2","Output09Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_2","Output09DelayFine","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_2","Output10Delay","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_2","Output10DelayFine","val","[-200,200]","[0.01,0.02,0.01,0.02]"],
+            ["R1","NONE","Ver400mA_26","TIMING_2","Output11DelayFine","val","[-200,200]","[0.01,0.02,0.01,0.02]"]
+        ]
+    },
+    "FB_VALIDATION": {
+        "_info": [
+            ["R1","COLD","Ver400mA_26","SOFB_01","Status","Correction is being calculated and applied","NA","NA"],
+            ["R1","COLD","Ver400mA_26","SOFB_01","Gain",0.1,"[0,10]","NA"],
+            ["R1","COLD","Ver400mA_26","SOFB_01","Max_Singular_Value",32,"[0,32]","NA"],
+            ["R1","COLD","Ver400mA_26","SOFB_01","RF_Correction",true,"NA","NA"],
+            ["R1","COLD","Ver400mA_26","SOFB_01","Req_Correction_Frequency",20.0,"[0,20]","NA"],
+            ["R1","COLD","Ver400mA_26","SOFB_01","Sensor_Names",
+                ["[1 2]: R1-101/DIA/BPM-02","[2 1]: R1-102/DIA/BPM-01","[2 2]: R1-102/DIA/BPM-02","[6 2]: R1-106/DIA/BPM-02"],
+                "NA","NA"],
+            ["R1","COLD","Ver400mA_26","SOFB_01","Excluded_HCM",["[2 3]"],"NA","NA"],
+            ["R1","COLD","Ver400mA_26","SOFB_02","Status","Correction is being calculated and applied","NA","NA"],
+            ["R1","COLD","Ver400mA_26","SOFB_02","Gain",0.1,"[0,10]","NA"],
+            ["R1","COLD","Ver400mA_26","SOFB_02","Max_Singular_Value",24,"[0,24]","NA"],
+            ["R1","COLD","Ver400mA_26","SOFB_02","Req_Correction_Frequency",20.0,"[0,20]","NA"],
+            ["R1","COLD","Ver400mA_26","SOFB_02","Sensor_Names",
+                ["[2 1]: R1-102/DIA/BPM-01","[6 2]: R1-106/DIA/BPM-02"],"NA","NA"],
+            ["R1","COLD","Ver400mA_26","SOFB_02","Excluded_VCM",[],"NA","NA"],
+            ["R1","COLD","Ver400mA_26","FB_03","Status","Correction is being calculated and applied","NA","NA"],
+            ["R1","COLD","Ver400mA_26","FB_03","Gain",0.2,"[0,10]","NA"],
+            ["R1","COLD","Ver400mA_26","FB_03","Max_Singular_Value",2,"[0,2]","NA"],
+            ["R1","COLD","Ver400mA_26","FB_03","Req_Correction_Frequency",0.3333,"[0,1]","NA"]
+        ]
+    },
+    "KICKER_VALIDATION": {
+        "_info": [
+            ["R1","NONE","Ver400mA_26","KICKER","Set_Current",280,"[0,1e3]","[0.01,0.05,0.01,0.05]"],
+            ["R1","NONE","Ver400mA_26","KICKER","Set_Voltage",4080,"[0,1e4]","[0.01,0.05,0.01,0.05]"]
+        ]
+    },
+    "CAVITIES_VALIDATION": {
+        "_info": [
+            ["R1","COLD","Ver400mA_26","LANDAU_CAVITY_A","Amplitude",2.12,"[0,1e3]","[0.01,0.05,0.01,0.05]"],
+            ["R1","COLD","Ver400mA_26","LANDAU_CAVITY_A","Margin_Low",0.5,"[0,10]","[0.01,0.05,0.01,0.05]"],
+            ["R1","COLD","Ver400mA_26","LANDAU_CAVITY_A","Margin_Up",2.0,"[0,10]","[0.01,0.05,0.01,0.05]"],
+            ["R1","COLD","Ver400mA_26","LANDAU_CAVITY_A","Minimum_Amplitude",110.00,"[0,1e3]","[0.01,0.05,0.01,0.05]"],
+            ["R1","COLD","Ver400mA_26","LANDAU_CAVITY_A","Potentiometer",6.2045,"[0,10]","[0.01,0.05,0.01,0.05]"],
+            ["R1","COLD","Ver400mA_26","LANDAU_CAVITY_A","Temperature",46.0,"[0,100]","NA"],
+            ["R1","COLD","Ver400mA_26","LANDAU_CAVITY_B","Amplitude",2.34,"[0,1e3]","[0.01,0.05,0.01,0.05]"],
+            ["R1","COLD","Ver400mA_26","LANDAU_CAVITY_B","Margin_Low",0.5,"[0,10]","[0.01,0.05,0.01,0.05]"],
+            ["R1","COLD","Ver400mA_26","LANDAU_CAVITY_B","Margin_Up",2.0,"[0,10]","[0.01,0.05,0.01,0.05]"],
+            ["R1","COLD","Ver400mA_26","LANDAU_CAVITY_B","Minimum_Amplitude",110.00,"[0,1e3]","[0.01,0.05,0.01,0.05]"],
+            ["R1","COLD","Ver400mA_26","LANDAU_CAVITY_B","Potentiometer",6.0370,"[0,10]","[0.01,0.05,0.01,0.05]"],
+            ["R1","COLD","Ver400mA_26","LANDAU_CAVITY_B","Temperature",44.0,"[0,100]","NA"],
+            ["R1","COLD","Ver400mA_26","MAIN_CAVITY_A","Amplitude",204.00,"[0,1e3]","[0.01,0.05,0.01,0.05]"],
+            ["R1","COLD","Ver400mA_26","MAIN_CAVITY_A","Phase",-97.00,"[-180,180]","[0.01,0.05,0.01,0.05]"],
+            ["R1","COLD","Ver400mA_26","MAIN_CAVITY_A","Potentiometer",5.0470,"[0,10]","[0.01,0.05,0.01,0.05]"],
+            ["R1","COLD","Ver400mA_26","MAIN_CAVITY_A","TX_Forward_power",2.00,"[0,100]","[0.01,0.05,0.01,0.05]"],
+            ["R1","COLD","Ver400mA_26","MAIN_CAVITY_A","Tuning_Offset",145.00,"[0,1e3]","[0.01,0.05,0.01,0.05]"],
+            ["R1","COLD","Ver400mA_26","MAIN_CAVITY_A","Temperature",46.0,"[0,100]","NA"],
+            ["R1","COLD","Ver400mA_26","MAIN_CAVITY_B","Amplitude",193.00,"[0,1e3]","[0.01,0.05,0.01,0.05]"],
+            ["R1","COLD","Ver400mA_26","MAIN_CAVITY_B","Phase",-89.00,"[-180,180]","[0.01,0.05,0.01,0.05]"],
+            ["R1","COLD","Ver400mA_26","MAIN_CAVITY_B","Potentiometer",5.1620,"[0,10]","[0.01,0.05,0.01,0.05]"],
+            ["R1","COLD","Ver400mA_26","MAIN_CAVITY_B","TX_Forward_power",2.00,"[0,100]","[0.01,0.05,0.01,0.05]"],
+            ["R1","COLD","Ver400mA_26","MAIN_CAVITY_B","Tuning_Offset",78.00,"[0,1e3]","[0.01,0.05,0.01,0.05]"],
+            ["R1","COLD","Ver400mA_26","MAIN_CAVITY_B","Temperature",42.0,"[0,100]","[0.01,0.05,0.01,0.05]"],
+            ["R1","HOT","Ver400mA_26","LANDAU_CAVITY_A","Amplitude",238.36,"[0,1e3]","[0.01,0.05,0.01,0.05]"],
+            ["R1","HOT","Ver400mA_26","LANDAU_CAVITY_A","Margin_Low",0.5,"[0,10]","[0.01,0.05,0.01,0.05]"],
+            ["R1","HOT","Ver400mA_26","LANDAU_CAVITY_A","Margin_Up",2.0,"[0,10]","[0.01,0.05,0.01,0.05]"],
+            ["R1","HOT","Ver400mA_26","LANDAU_CAVITY_A","Minimum_Amplitude",110.00,"[0,1e3]","[0.01,0.05,0.01,0.05]"],
+            ["R1","HOT","Ver400mA_26","LANDAU_CAVITY_A","Potentiometer",6.2045,"[0,10]","[0.01,0.05,0.01,0.05]"],
+            ["R1","HOT","Ver400mA_26","LANDAU_CAVITY_A","Temperature",46.0,"[0,100]","NA"],
+            ["R1","HOT","Ver400mA_26","LANDAU_CAVITY_B","Amplitude",317.50,"[0,1e3]","[0.01,0.05,0.01,0.05]"],
+            ["R1","HOT","Ver400mA_26","LANDAU_CAVITY_B","Margin_Low",0.5,"[0,10]","[0.01,0.05,0.01,0.05]"],
+            ["R1","HOT","Ver400mA_26","LANDAU_CAVITY_B","Margin_Up",2.0,"[0,10]","[0.01,0.05,0.01,0.05]"],
+            ["R1","HOT","Ver400mA_26","LANDAU_CAVITY_B","Minimum_Amplitude",110.00,"[0,1e3]","[0.01,0.05,0.01,0.05]"],
+            ["R1","HOT","Ver400mA_26","LANDAU_CAVITY_B","Potentiometer",6.0370,"[0,10]","[0.01,0.05,0.01,0.05]"],
+            ["R1","HOT","Ver400mA_26","LANDAU_CAVITY_B","Temperature",44.0,"[0,100]","NA"],
+            ["R1","HOT","Ver400mA_26","MAIN_CAVITY_A","Amplitude",204.00,"[0,1e3]","[0.01,0.05,0.01,0.05]"],
+            ["R1","HOT","Ver400mA_26","MAIN_CAVITY_A","Phase",-97.00,"[-180,180]","[0.01,0.05,0.01,0.05]"],
+            ["R1","HOT","Ver400mA_26","MAIN_CAVITY_A","Potentiometer",5.0470,"[0,10]","[0.01,0.05,0.01,0.05]"],
+            ["R1","HOT","Ver400mA_26","MAIN_CAVITY_A","TX_Forward_power",47.42,"[0,100]","[0.01,0.05,0.01,0.05]"],
+            ["R1","HOT","Ver400mA_26","MAIN_CAVITY_A","Tuning_Offset",145.00,"[0,1e3]","[0.01,0.05,0.01,0.05]"],
+            ["R1","HOT","Ver400mA_26","MAIN_CAVITY_A","Temperature",46.0,"[0,100]","NA"],
+            ["R1","HOT","Ver400mA_26","MAIN_CAVITY_B","Amplitude",193.00,"[0,1e3]","[0.01,0.05,0.01,0.05]"],
+            ["R1","HOT","Ver400mA_26","MAIN_CAVITY_B","Phase",-89.00,"[-180,180]","[0.01,0.05,0.01,0.05]"],
+            ["R1","HOT","Ver400mA_26","MAIN_CAVITY_B","Potentiometer",5.1620,"[0,10]","[0.01,0.05,0.01,0.05]"],
+            ["R1","HOT","Ver400mA_26","MAIN_CAVITY_B","TX_Forward_power",49.66,"[0,100]","[0.01,0.05,0.01,0.05]"],
+            ["R1","HOT","Ver400mA_26","MAIN_CAVITY_B","Tuning_Offset",78.00,"[0,1e3]","[0.01,0.05,0.01,0.05]"],
+            ["R1","HOT","Ver400mA_26","MAIN_CAVITY_B","Temperature",42.0,"[0,100]","[0.01,0.05,0.01,0.05]"]
+        ]
+    },
+    "SCRAPERS_VALIDATION": {
+        "_info": [
+            ["R1","NONE","Ver400mA_26","SCR-[1 1]","Position",30.28,"[0,31]","[0.01,0.05,0.01,0.05]"],
+            ["R1","NONE","Ver400mA_26","SCR-[1 2]","Position",30.32,"[0,31]","[0.01,0.05,0.01,0.05]"],
+            ["R1","NONE","Ver400mA_26","SCR-[1 3]","Position",28.93,"[0,31]","[0.01,0.05,0.01,0.05]"]
+        ]
+    },
+    "STM_VALIDATION": {
+        "_info": [
+            ["R1","NONE","Ver400mA_26","STM","Feedback",false,"NA","NA"],
+            ["R1","NONE","Ver400mA_26","STM","Injections_per_Step",1,"[0,30]","NA"],
+            ["R1","NONE","Ver400mA_26","STM","Nr_of_Buckets",32,"[0,32]","NA"],
+            ["R1","NONE","Ver400mA_26","STM","Snapshot",5432,"[0,1e10]","NONE"],
+            ["R1","NONE","Ver400mA_26","STM","Step_Length",3,"[0,30]","NA"]
+        ]
+    },
+    "RF_VALIDATION": {
+        "_info": [
+            ["R1","COLD","Ver400mA_26","RF","Frequency",99.931200,"[0,200]","[0.05,0.1,0.05,0.1]"],
+            ["R1","HOT","Ver400mA_26","RF","Frequency",99.931200,"[0,200]","[0.05,0.1,0.05,0.1]"]
+        ]
+    }
+}
+ 

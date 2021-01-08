@@ -1,0 +1,22 @@
+{
+    "Bloch": [
+        "R1-109/DIA/BPM-03", 
+        "R1-110/DIA/BPM-01"
+    ], 
+    "FinEst": [
+        "R1-111/DIA/BPM-03", 
+        "R1-112/DIA/BPM-01"
+    ], 
+    "Flexpes": [
+        "R1-106/DIA/BPM-03", 
+        "R1-107/DIA/BPM-01"
+    ], 
+    "MaxPEEM": [
+        "R1-110/DIA/BPM-03", 
+        "R1-111/DIA/BPM-01"
+    ], 
+    "Species": [
+        "R1-107/DIA/BPM-03", 
+        "R1-108/DIA/BPM-01"
+    ]
+}
