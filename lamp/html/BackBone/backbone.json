@@ -2,8 +2,9 @@
     "BBB": 
     {
         "property": {
-                "name": ["Avg_Horizontal_Tune","Avg_Vertical_Tune","FB_Pattern","Input_File","SRAM_peak_Freq_1","SRAM_peak_Freq_2","State"],
-                "type": ["float","float","str","str","float","float","bool"] 
+                "name": ["Avg_Horizontal_Tune","Avg_Vertical_Tune","FB_Pattern","Input_File","SRAM_peak_Freq_1","SRAM_peak_Freq_2","State",
+                        "upload"],
+                "type": ["float","float","str","str","float","float","bool","file"] 
         },
         "device":["TUMON","BBB_X","BBB_Y","BBB_Z"],
         "links": [["Avg_Horizontal_Tune","TUMON","COLD","R1"],
@@ -44,8 +45,8 @@
     },
     "BPM": {
         "property": {
-                "name": ["Interlock_Disabled","AGC_Disabled","Excluded_X","Excluded_Y"],
-                "type": ["bool","bool","bool","bool"]
+                "name": ["Interlock_Disabled","AGC_Disabled","Excluded_X","Excluded_Y","upload"],
+                "type": ["bool","bool","bool","bool","file"]
         },
         "device": ["R1-101/DIA/BPM-01", "R1-101/DIA/BPM-02", "R1-101/DIA/BPM-03", 
                 "R1-102/DIA/BPM-01", "R1-102/DIA/BPM-02", "R1-102/DIA/BPM-03", 
@@ -875,8 +876,8 @@
         "property": {
                 "name": ["Avg_Energy_Spread","Avg_Horizontal_Emittance",
                         "Avg_Vertical_Emittance","Hor_Beam_Size",
-                        "Ver_Beam_Size"],
-                "type": ["float","float","float","float","float"]
+                        "Ver_Beam_Size","upload"],
+                "type": ["float","float","float","float","float","file"]
         }, 
         "device":  ["BEMON","OptLine_1","OptLine_2"],
         "links": [["Avg_Energy_Spread","BEMON","COLD","R1"],
@@ -910,8 +911,8 @@
     },
     "DCCT": {
         "property": {
-                "name": ["Current","Lifetime"],
-                "type": ["float","float"]
+                "name": ["Current","Lifetime","upload"],
+                "type": ["float","float","file"]
         },
         "device":  ["DCCT"],
         "links": [["Current","DCCT","COLD","R1"],
@@ -925,8 +926,8 @@
     },
     "BUMP": {
         "property": {
-                "name": ["Hor_Angle","Hor_Position","Ver_Angle","Ver_Position"],
-                "type": ["float","float","float","float"]
+                "name": ["Hor_Angle","Hor_Position","Ver_Angle","Ver_Position","upload"],
+                "type": ["float","float","float","float","file"]
         },
         "device":  ["MIK","NamoMAX","BALDER",
                     "BioMAX","CoSAXS","Veritas",
@@ -989,8 +990,8 @@
         "property": {
                 "name": ["Amplifier_Enable","I_100_MHz","I_300_MHz","I_500_MHz",
                         "I_700_MHz","Q_100_MHz","Q_300_MHz","Q_500_MHz",
-                        "Q_700_MHz","RF_IN_Select"],
-                "type": ["bool","float","float","float","float","float","float","float","float","float"]
+                        "Q_700_MHz","RF_IN_Select","upload"],
+                "type": ["bool","float","float","float","float","float","float","float","float","float","file"]
         },
         "device":  ["CHOPPER"],
         "links": [["Amplifier_Enable","CHOPPER","NONE","R1"],
@@ -1021,10 +1022,10 @@
                         "Output05Delay","Output06Delay","Output07Delay",
                         "Output08Delay","Output08DelayFine","Output09Delay",
                         "Output09DelayFine","Output10Delay","Output10DelayFine",
-                        "Output11DelayFine"],
+                        "Output11DelayFine","upload"],
                 "type": ["float","float","float","float","float","float","float",
                         "float","float","float","float","float","float","float",
-                        "float","float"]
+                        "float","float","file"]
         },
         "device":  ["TIMING_1","TIMING_2"],
         "links": [["Out11_Delay","TIMING_1","NONE","R1"],
@@ -1167,7 +1168,8 @@
                         "R1-D111210CAB01/MAG/PSIB-04",
                         "R1-D111210CAB01/MAG/PSIB-09",
                         "R1-D111210CAB01/MAG/PSIB-12",
-                        "R1-D111210CAB01/MAG/PSIB-10"],
+                        "R1-D111210CAB01/MAG/PSIB-10",
+                        "upload"],
                 "type": ["bool","float","int","bool","float","float",
                         "bool",
                         "bool",
@@ -1240,7 +1242,8 @@
                         "bool",
                         "bool",
                         "bool",
-                        "bool"]
+                        "bool",
+                        "json","img"]
         },
         "device":  ["SOFB_01","SOFB_02","FB_03","Excluded_HCM","Excluded_VCM"],
         "links": [["Status","SOFB_01","COLD","R1"],
@@ -1344,8 +1347,8 @@
     },
     "KICKER": {
         "property": {
-                "name": ["Set_Current","Set_Voltage"],
-                "type": ["float","float"]
+                "name": ["Set_Current","Set_Voltage","upload"],
+                "type": ["float","float","file"]
         },
         "device":  ["KICKER"],
         "links": [["Set_Current","KICKER","NONE","R1"],
@@ -1357,8 +1360,8 @@
         "property": {
                 "name": ["Amplitude","Margin_Low","Margin_Up","Minimum_Amplitude",
                         "Potentiometer","Temperature","Phase","TX_Forward_power",
-                        "Tuning_Offset"],
-                "type": ["float","float","float","float","float","float","float","float","float"]
+                        "Tuning_Offset","upload"],
+                "type": ["float","float","float","float","float","float","float","float","float","file"]
         },
         "device":  ["LANDAU_CAVITY_13","LANDAU_CAVITY_14","LANDAU_CAVITY_15",
                     "MAIN_CAVITY_16","MAIN_CAVITY_17","MAIN_CAVITY_18",
@@ -1523,8 +1526,8 @@
     },
     "SCRAPERS": {
         "property": {
-                "name": ["Position"],
-                "type": ["float"]
+                "name": ["Position","upload"],
+                "type": ["float","file"]
         },
         "device":  ["SCR-(1_1)","SCR-(1_2)","SCR-(1_3)"],
         "links": [["Position","SCR-(1_1)","NONE","R1"],
@@ -1537,8 +1540,8 @@
     "STM": {
         "property": {
                 "name": ["Feedback","Injections_per_Step","Nr_of_Buckets",
-                        "Snapshot","Step_Length"],
-                "type": ["bool","int","int","int","int"]
+                        "Snapshot","Step_Length","upload"],
+                "type": ["bool","int","int","int","int","file"]
         },
         "device":  ["STM"],
         "links": [["Feedback","STM","NONE","R1"],
@@ -1554,8 +1557,8 @@
     },
     "RF": {
         "property": {
-                "name": ["Frequency"],
-                "type": ["float"]
+                "name": ["Frequency","upload"],
+                "type": ["float","file"]
         },
         "device":  ["RF"],
         "links": [["Frequency","RF","COLD","R1"],

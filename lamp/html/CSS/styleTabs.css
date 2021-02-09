@@ -4,20 +4,21 @@ table {
     font-size   : 0.9rem; /* 10px */
     font-family : Verdana, Arial, sans-serif;
     border-collapse: collapse;
-    max-width: 80%;
-    margin-left:5%;
+    
+ 
     margin-bottom:5%;
   }
 
 tr {
     background-color: #f5f5f5;
-    box-shadow: 0 .4em .2em rgba(0,0,0,.4);
+    box-shadow: 0.2em .4em .2em rgba(0,0,0,.4);
 }
 th, td {
     padding: 0.5rem;
     text-align: center;
     border: 2px solid #000;
     height: 2em;
+
 }
 
 
@@ -37,5 +38,5 @@ tbody tr:hover {
     border-color:  #333;
     padding: 0.3em;
     border-width: 0.2em;
-    box-shadow: .2em 0 .4em rgba(0,0,0,.4);
+    box-shadow: .2em 0.4em .4em rgba(0,0,0,.4);
   }

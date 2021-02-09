@@ -125,7 +125,7 @@ class prettyTab {
                         <th style='background:  white;border:2px solid #333;
                         border-bottom:2px solid #eee;color: #333;'>".htmlentities($dev)."</th>
                         <th style='background: white;border: none;border-bottom:2px solid #eee'></th>
-                        <th style='background: white;border: none;border-bottom:2px solid #eee'></th>
+                        <th style='background: white;border: 2px solid white;border-bottom:2px solid #eee'></th>
                         </tr> 
                         <tr>";
         $subLabels = array("","","</br>good/fair","");
@@ -159,22 +159,22 @@ class prettyTab {
                 else $val = '""';
                                 
                 $printTab .= "<td style='border: white; text-align:right;'>";
-                if ($editable[$i]) {
+                if ($editable[$i] && $this->types[$iter] != 'file') {
                     $name = $labelTab . $posname . '@' . $this->colLabels[$i]; 
                     if ($this->types[$iter] == 'float') {
-                        if ($i==1) $printTab .= "<input type='number' size='10' id='$name' name='$name' value=$val class='border-none'  onkeydown='if (event.keyCode == 13) { this.form.submit(); return false; }' required>";
+                        if ($i==1) $printTab .= "<input type='number' size='5' id='$name' name='$name' value=$val class='border-none'  onkeydown='if (event.keyCode == 13) { this.form.submit(); return false; }' required>";
                         else {
                             $valArray = explode('|',$val); 
                             $valMin = (float)$valArray[0];
                             if (sizeof($valArray)>1) $valMax = (float)$valArray[1];
                             else $valMax = $valMin;
                             
-                            $printTab .= "<input type='number' size='5' id='".$name."[min]' name='".$name."[min]' max=$valMax value=$valMin class='border-none' required>%";
-                            $printTab .= "<input type='number' size='5' id='".$name."[max]' name='".$name."[max]' min=$valMin value=$valMax class='border-none' required>%";
+                            $printTab .= "<input type='number' size='1' id='".$name."[min]' name='".$name."[min]' max=$valMax value=$valMin class='border-none' required>%";
+                            $printTab .= "<input type='number' size='1' id='".$name."[max]' name='".$name."[max]' min=$valMin value=$valMax class='border-none' required>%";
                             
                         }
                     } else if ($this->types[$iter] == 'int') {
-                        if ($i==1) $printTab .= "<input type='number' size='10' setp='1' id='$name' name='$name' value=$val class='border-none' onchange='this.form.submit();'>";
+                        if ($i==1) $printTab .= "<input type='number' size='5' setp='1' id='$name' name='$name' value=$val class='border-none' onchange='this.form.submit();'>";
                         else $printTab .= '';
                     } else if ($this->types[$iter] == 'bool') {
                         if ($i==1) {
@@ -202,18 +202,31 @@ class prettyTab {
                             $printTab .= '';
                         }
                     } else if ($this->types[$iter] == 'str') {
-                        if ($i==1) $printTab .= "<input type='text' maxlength='50' size='10' id='$name' name='$name' value=".$val." class='border-none' onchange='this.form.submit();'>";
+                        if ($i==1) $printTab .= "<input type='text' maxlength='50' size='5' id='$name' name='$name' value=".$val." class='border-none' onchange='this.form.submit();'>";
                         else $printTab .= '';
                     } else {
-                        $printTab .= "<input type='text'  maxlength='50' size='10' id='$name' name='$name' value=".$val." class='border-none' onchange='this.form.submit();'>";
+                        $printTab .= "<input type='text'  maxlength='50' size='5' id='$name' name='$name' value=".$val." class='border-none' onchange='this.form.submit();'>";
                     }
-                } else {
+                } else  {
                     $posname .= '@' . $val;
                     if ($i==0) $printTab .= '<b>';
                     $printTab .= $val;
                     if ($i==0) $printTab .= '</b>'; 
                 }
+           /* if ($this->types[$iter] != 'file')    
+           if ($this->types[$iter] == 'file') {
+                    if ($i==0) {
+                        $printTab .= '<form action="" method="post" enctype="multipart/form-data">';
+                        $printTab .= "<input type='file' id='imgfile' onchange='this.form.submit()' name='images$name' value='Load'>
+                                    <label for='imgfile' >Upload</label>";
+                        $printTab .=  '</form>';
+                    } else {
+                        $printTab .= '';
+                    }
+                }*/
                 $printTab .= "</td>"; 
+
+                
             }
             $printTab .= "</tr>";
             $iter++;
@@ -225,15 +238,6 @@ class prettyTab {
         $printTab .= '</form>';
         
         if ($hasComment) {
-
-            //$printTab .= '</form>';
-          //  $printTab .= " <form method='post'>
-          //               <textarea name='comment' 
-          //               style='font-size: 1.5em; border: none;padding-left: 2em; max-width:80%; 
-          //               min-width:80%; max-height:30vh; background: #F3F3F3;' placeholder='Add comment here ...'>".$comment."</textarea>
-          //               <br>
-          //               <button class='comment_button' type='submit'><i>Comment</i></button>".
-          //               "</form>";
             $printTab .= " <form method='post' >
                          <textarea name='comment' 
                          style='font-size: 1.5em; border: none;padding-left: 2em; min-width:100%; 
@@ -242,6 +246,13 @@ class prettyTab {
                          placeholder='Add comment here ...'>".$comment."</textarea>
                          ".
                          "</form>";
+
+            $printTab .= '<form action="" method="post" enctype="multipart/form-data">';
+            $printTab .= "<input type='file' id='imgfile' onchange='this.form.submit()' name='images$name' value='Load'>
+                        <label for='imgfile' >Upload</label>";
+            $printTab .=  '</form>';;
+
+         
         } 
         //$printTab .=  "</div>";
 

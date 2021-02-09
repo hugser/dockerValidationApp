@@ -164,8 +164,8 @@ body, html{
   }
 
   .rightLayout .inner .setupTab {
-    width: 60%;
-    float: left;
+    width: 65%;
+    float: center;
     overflow-x: auto;
     padding-top: 4%;
     padding-left: 8%;

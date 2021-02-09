@@ -201,7 +201,7 @@ if ( isset($_SESSION["new$labelDB"]) ) {
 
     $adminDB->createAttr("DATA", "type");
     $adminDB->insertAttr("DATA", "type", 
-            array('checked','bool','float','int','str'));
+            array('checked','bool','float','int','str','file'));
 
     
   //  $adminDB->createAttr("BPM", "name");
