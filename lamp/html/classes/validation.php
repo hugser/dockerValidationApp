@@ -92,7 +92,9 @@ class validation {
                 $class = $labels[1];
                 $dev = $labels[2];
                 $prop = $labels[3];
-                $_SESSION['validation'][$_GET['acc']][$stage][$class][$dev][$prop] = $_POST[$key];
+                $_SESSION['validation'][$_GET['acc']][$stage][$class][$dev][$prop] = 
+                            (is_array($_POST[$key]))? implode(',',array_keys($_POST[$key])): $_POST[$key];
+               
             }
         }
         
@@ -398,8 +400,9 @@ public function createValidationForm(&$layoutInfo,&$tabArray) {
                         $commentValDev = $commentVal['comment'][$choosenCL][$stage][$dev];
                     }
 
-                    $this->tab->validationTableFixed($dev,$summary[$stage][$choosenCL][$dev],$commentValDev);
-                    $layoutInfo[$stage] .= $this->tab->validationTable($stage.'@'.$choosenCL,$dev,$commentValDev);
+                   
+                    //$layoutInfo[$stage] .= $this->tab->validationTable($stage.'@'.$choosenCL,$dev,$commentValDev,$summary[$stage][$choosenCL][$dev]);
+                    $layoutInfo[$stage] .= $this->tab->validationTable(array(false,true,false),$stage,$choosenCL,$dev,$summary[$stage][$choosenCL][$dev],$commentValDev);
                     
                     
                     $layoutInfo[$stage] .= "</div>";

@@ -1,0 +1,7 @@
+{
+    "X": [10,2,3,4,5],
+    "Y": [20,4,6,8,10],
+    "Xlabel": "X axis",
+    "Ylabel": "Y axis",
+    "Title": "This is the plot title"
+}

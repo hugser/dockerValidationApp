@@ -20,21 +20,21 @@ class setup {
 
     public function SESSION_newSetupDev() {
         if (isset($_POST['DEVICES'])) {
-            $class = $_SESSION['setup'][$_GET['accSetup']][$this->labelCL];
+            $class = $_SESSION['setup'][$_GET['acc']][$this->labelCL];
             
             foreach($this->stages as $stage) {
                 if ( isset($_POST[$class][$stage]) ) {
                     $dev = $_POST[$class][$stage];
-                    unset($_SESSION['setup'][$_GET['accSetup']]['OPEN']);
-                    $_SESSION['setup'][$_GET['accSetup']]['OPEN'][$class][$stage] = $dev;
+                    unset($_SESSION['setup'][$_GET['acc']]['OPEN']);
+                    $_SESSION['setup'][$_GET['acc']]['OPEN'][$class][$stage] = $dev;
         
-                    if (!isset($_SESSION['setup'][$_GET['accSetup']]['newSetup'][$class][$stage][$dev])) {
-                        $idVer = $this->mySQL->getVerID($_SESSION['setup'][$_GET['accSetup']][$this->labelSetup]);
-                        $_SESSION['setup'][$_GET['accSetup']]['newSetup'][$class][$stage][$dev] =  
-                            $this->mySQL->getClassSetupProp($class, $dev, $_GET['accSetup'], $stage, $idVer);
+                    if (!isset($_SESSION['setup'][$_GET['acc']]['newSetup'][$class][$stage][$dev])) {
+                        $idVer = $this->mySQL->getVerID($_SESSION['setup'][$_GET['acc']][$this->labelSetup]);
+                        $_SESSION['setup'][$_GET['acc']]['newSetup'][$class][$stage][$dev] =  
+                            $this->mySQL->getClassSetupProp($class, $dev, $_GET['acc'], $stage, $idVer);
                     }
             
-                    header("Location: setup.html.php?accSetup=".$_GET['accSetup']."&accStage=".$_GET['accStage']);
+                    header("Location: setup.html.php?acc=".$_GET['acc']."&stage=".$_GET['stage']);
                     return;
                 }
             }
@@ -46,7 +46,7 @@ class setup {
             $data = json_decode(file_get_contents($_FILES["load$this->labelCL"]['tmp_name']),true);
         
             foreach (array_keys($data) as $class) {
-                unset($_SESSION['setup'][$_GET['accSetup']]['newSetup'][$class]);
+                unset($_SESSION['setup'][$_GET['acc']]['newSetup'][$class]);
                 foreach ($data[$class]['data'] as $settings) {
                     $prop = $settings[0];
                     $dev = $settings[1];
@@ -55,20 +55,20 @@ class setup {
                     $val = $settings[4];
                     $error = (sizeof($settings)==6)? $settings[5]: '';
         
-                    if ($acc == $_GET['accSetup']) {
-                        $_SESSION['setup'][$_GET['accSetup']][$stage ."@". $dev . "@" . $prop . "@value"] = $val;
-                        $_SESSION['setup'][$_GET['accSetup']][$stage ."@". $dev . "@" . $prop . "@error"] = $error;
+                    if ($acc == $_GET['acc']) {
+                        $_SESSION['setup'][$_GET['acc']][$stage ."@". $dev . "@" . $prop . "@value"] = $val;
+                        $_SESSION['setup'][$_GET['acc']][$stage ."@". $dev . "@" . $prop . "@error"] = $error;
                          
-                        if (!isset($_SESSION['setup'][$_GET['accSetup']]['newSetup'][$class][$stage][$dev])) {
-                            $_SESSION['setup'][$_GET['accSetup']]['newSetup'][$class][$stage][$dev] = array();
+                        if (!isset($_SESSION['setup'][$_GET['acc']]['newSetup'][$class][$stage][$dev])) {
+                            $_SESSION['setup'][$_GET['acc']]['newSetup'][$class][$stage][$dev] = array();
                         }
-                        array_push($_SESSION['setup'][$_GET['accSetup']]['newSetup'][$class][$stage][$dev],$prop);
+                        array_push($_SESSION['setup'][$_GET['acc']]['newSetup'][$class][$stage][$dev],$prop);
                     }
         
                 }
             }
         
-            header("Location: setup.html.php?accSetup=".$_GET['accSetup']. "&accStage=".$_GET['accStage']);
+            header("Location: setup.html.php?acc=".$_GET['acc']. "&stage=".$_GET['stage']);
             return;
         }
         
@@ -76,7 +76,7 @@ class setup {
 
     public function SESSION_newSetupProp() {
         if (isset($_POST['PROPERTIES'])) {
-            $class = $_SESSION['setup'][$_GET['accSetup']][$this->labelCL];
+            $class = $_SESSION['setup'][$_GET['acc']][$this->labelCL];
         
             $stage = array_keys($_POST['PROPERTIES'][$class])[0];
             $dev = array_keys($_POST['PROPERTIES'][$class][$stage])[0];
@@ -85,9 +85,9 @@ class setup {
             foreach (array_keys($_POST[$class][$stage][$dev]) as $prop) {
                 array_push($propVec,$prop);
             }
-            $_SESSION['setup'][$_GET['accSetup']]['newSetup'][$class][$stage][$dev] = $propVec;
+            $_SESSION['setup'][$_GET['acc']]['newSetup'][$class][$stage][$dev] = $propVec;
         
-            header("Location: setup.html.php?accSetup=".$_GET['accSetup']."&accStage=".$_GET['accStage']);
+            header("Location: setup.html.php?acc=".$_GET['acc']."&stage=".$_GET['stage']);
             return;
            
         }
@@ -97,19 +97,34 @@ class setup {
         foreach($this->stages as $stage) {
 
             if ( isset($_POST["Update_$stage"]) ) {
-                $devices = array_merge(...$this->mySQL->getTabRows( 'device'.$_SESSION['setup'][$_GET['accSetup']][$this->labelCL], array('device') ));
+
+                $devices = array_merge(...$this->mySQL->getTabRows( 'device'.$_SESSION['setup'][$_GET['acc']][$this->labelCL], array('device') ));
+                
                 foreach($devices as $dev) {
-                    $properties = array_merge(...$this->mySQL->getClassPropPerDev($_SESSION['setup'][$_GET['accSetup']][$this->labelCL],$dev,$_GET['accSetup'],$stage));
+
+                    $properties = array_merge(...$this->mySQL->getClassPropPerDev($_SESSION['setup'][$_GET['acc']][$this->labelCL],$dev,$_GET['acc'],$stage));
+                    
                     foreach($properties as $prop) {
+
                         if ( isset($_POST[$stage ."@". $dev . "@" . $prop . "@value"]) ) {
-                            if ($_POST[$stage ."@". $dev . "@" . $prop . "@value"] !== '')
+
+                            if (is_array($_POST[$stage ."@". $dev . "@" . $prop . "@value"])) {
+                                $_SESSION['setup'][$_GET['acc']][$stage ."@". $dev . "@" . $prop . "@value"] = 
+                                implode(',',array_keys($_POST[$stage ."@". $dev . "@" . $prop . "@value"]));
+                                $_SESSION['setup'][$_GET['acc']][$stage ."@". $dev . "@" . $prop . "@error"] = '';
+
+                            }
+                            else if ($_POST[$stage ."@". $dev . "@" . $prop . "@value"] !== '')
                             {
-                                $_SESSION['setup'][$_GET['accSetup']][$stage ."@". $dev . "@" . $prop . "@value"] = $_POST[$stage ."@". $dev . "@" . $prop . "@value"];
-                                $_SESSION['setup'][$_GET['accSetup']][$stage ."@". $dev . "@" . $prop . "@error"] = 
+
+                                $_SESSION['setup'][$_GET['acc']][$stage ."@". $dev . "@" . $prop . "@value"] = $_POST[$stage ."@". $dev . "@" . $prop . "@value"];
+                                $_SESSION['setup'][$_GET['acc']][$stage ."@". $dev . "@" . $prop . "@error"] = 
                                 (isset($_POST[$stage ."@". $dev . "@" . $prop . "@error"])) ? 
                                 implode('|',$_POST[$stage ."@". $dev . "@" . $prop . "@error"]) : '';
+                           
                             }
                         }
+
                         $_SESSION["type_$stage"][$dev][$prop] = isset($_POST["type_$stage"][$dev][$prop]) ? 
                                                                 $_POST["type_$stage"][$dev][$prop] :
                                                                 '';
@@ -117,7 +132,7 @@ class setup {
                     
                 }
         
-                header("Location: setup.html.php?accSetup=".$_GET['accSetup']."&accStage=".$_GET['accStage']);
+                header("Location: setup.html.php?acc=".$_GET['acc']."&stage=".$_GET['stage']);
                 return;
             }
         }
@@ -126,12 +141,12 @@ class setup {
 
     public function SESSION_updateComment() {
         if (isset($_POST['comment']) && $_POST['comment'] !=='') {
-            $class = array_keys($_SESSION['setup'][$_GET['accSetup']]['OPEN'])[0];
-            $stage = array_keys($_SESSION['setup'][$_GET['accSetup']]['OPEN'][$class])[0];
-            $dev = $_SESSION['setup'][$_GET['accSetup']]['OPEN'][$class][$stage];
-            $_SESSION['setup'][$_GET['accSetup']]['comment'][$class][$stage][$dev] = $_POST['comment'];
+            $class = array_keys($_SESSION['setup'][$_GET['acc']]['OPEN'])[0];
+            $stage = array_keys($_SESSION['setup'][$_GET['acc']]['OPEN'][$class])[0];
+            $dev = $_SESSION['setup'][$_GET['acc']]['OPEN'][$class][$stage];
+            $_SESSION['setup'][$_GET['acc']]['comment'][$class][$stage][$dev] = $_POST['comment'];
         
-            header("Location: setup.html.php?accSetup=".$_GET['accSetup']."&accStage=".$_GET['accStage']);
+            header("Location: setup.html.php?acc=".$_GET['acc']."&stage=".$_GET['stage']);
             return;
         }
         
@@ -139,7 +154,7 @@ class setup {
 
 
     public function newSetup() {
-        if (isset($_SESSION['setup'][$_GET['accSetup']]['newSETUP'])) {
+        if (isset($_SESSION['setup'][$_GET['acc']]['newSETUP'])) {
             $arrayComment['Updated from']="New empty setup";
             $arrayComment['Updated by']=$_SESSION['user'];
 
@@ -151,34 +166,34 @@ class setup {
         
             //-------- Create GOST class setup
         
-            $idACC = $this->mySQL->getAttrID('acc',"MACHINE",$_GET['accSetup']);
+            $idACC = $this->mySQL->getAttrID('acc',"MACHINE",$_GET['acc']);
             $idMACHINE = $this->mySQL->getClassID(array("accMACHINE","stageMACHINE"),"MACHINE",array($idACC,1));
             $idClassMACHINE = $this->mySQL->getClassID(array("GHOST","MACHINE"),"GHOST_MAC",array(1,$idMACHINE));
             $this->mySQL->insertClassSetup("GHOST_MAC", array(array($idClassMACHINE,$idVer,'','')));
         
-            unset($_SESSION['setup'][$_GET['accSetup']]);    
-            unset($_GET['accStage']);
+            unset($_SESSION['setup'][$_GET['acc']]);    
+            unset($_GET['stage']);
         }
     }
 
     public function updateSetup() {
-        if ( isset($_SESSION['setup'][$_GET['accSetup']]['updateSETUP'])) {
+        if ( isset($_SESSION['setup'][$_GET['acc']]['updateSETUP'])) {
 
-            $arrayComment = isset($_SESSION['setup'][$_GET['accSetup']]['comment'])? 
-                    $_SESSION['setup'][$_GET['accSetup']]['comment']:
+            $arrayComment = isset($_SESSION['setup'][$_GET['acc']]['comment'])? 
+                    $_SESSION['setup'][$_GET['acc']]['comment']:
                     array();
-            $arrayComment['Updated from']=$_SESSION['setup'][$_GET['accSetup']][$this->labelSetup];
+            $arrayComment['Updated from']=$_SESSION['setup'][$_GET['acc']][$this->labelSetup];
             $arrayComment['Updated by']=$_SESSION['user'];
 
             $comment = json_encode($arrayComment);
     
 
-            $oldVerID = $this->mySQL->getVerID($_SESSION['setup'][$_GET['accSetup']][$this->labelSetup]);
+            $oldVerID = $this->mySQL->getVerID($_SESSION['setup'][$_GET['acc']][$this->labelSetup]);
             $label = ($_COOKIE['newLabel']!='')? $_COOKIE['newLabel']: $this->mySQL->getVerLabel($oldVerID);
     
             $stamp = date("Y/m/d H:i:s");
     
-            $idACC = $this->mySQL->getAttrID('acc',"MACHINE",$_GET['accSetup']);
+            $idACC = $this->mySQL->getAttrID('acc',"MACHINE",$_GET['acc']);
 
         foreach ($this->classList as $class) {
             $update = array();
@@ -190,24 +205,25 @@ class setup {
                     $idStage = $this->mySQL->getAttrID('stage',"MACHINE",$stage);
 
                     $properties = 
-                    array_merge(...$this->mySQL->getClassPropPerDev($class,$dev,$_GET['accSetup'],$stage));
-                    $originalSetup = $this->mySQL->getClassSetupPerDev($class,$dev,$_GET['accSetup'],$stage,
-                    $this->mySQL->getVerID($_SESSION['setup'][$_GET['accSetup']][$this->labelSetup]));
+                    array_merge(...$this->mySQL->getClassPropPerDev($class,$dev,$_GET['acc'],$stage));
+                    $originalSetup = $this->mySQL->getClassSetupPerDev($class,$dev,$_GET['acc'],$stage,
+                    $this->mySQL->getVerID($_SESSION['setup'][$_GET['acc']][$this->labelSetup]));
                 
+                    
                     foreach ($properties as $prop) {
                         
-                        if ( isset($_SESSION['setup'][$_GET['accSetup']][$stage ."@". $dev . "@" . $prop . "@value"]) 
-                        && isset($_SESSION['setup'][$_GET['accSetup']]['newSetup'][$class][$stage][$dev]) 
-                        && in_array($prop,$_SESSION['setup'][$_GET['accSetup']]['newSetup'][$class][$stage][$dev]))
+                        if ( isset($_SESSION['setup'][$_GET['acc']][$stage ."@". $dev . "@" . $prop . "@value"]) 
+                        && isset($_SESSION['setup'][$_GET['acc']]['newSetup'][$class][$stage][$dev]) 
+                        && in_array($prop,$_SESSION['setup'][$_GET['acc']]['newSetup'][$class][$stage][$dev]))
                         {
                             if( !defined('CREATE_VER_EXECUTED') ){
                                 if (!empty($originalSetup)) { // insert a new entry in VERSION and get ID
                                     $this->mySQL->insertVer($stamp,$label,$comment,0);
                                     $idVer = $this->mySQL->getVerID($stamp);
                                 } else { // Update VERSION entry and set crurrent stamp to the new update stamp 
-                                    $idVer = $this->mySQL->getVerID($_SESSION['setup'][$_GET['accSetup']][$this->labelSetup]);
+                                    $idVer = $this->mySQL->getVerID($_SESSION['setup'][$_GET['acc']][$this->labelSetup]);
                                     $this->mySQL->updateVer($idVer,$stamp,$label,$comment,0);
-                                    $_SESSION['setup'][$_GET['accSetup']][$this->labelSetup] = $stamp;
+                                    $_SESSION['setup'][$_GET['acc']][$this->labelSetup] = $stamp;
                                 }
                             
                             
@@ -222,8 +238,8 @@ class setup {
 
                             $idClassMACHINE = $this->mySQL->getClassID(array("$class","MACHINE"),$class."_MACHINE",array($idClass,$idMACHINE));
 
-                            $val = $_SESSION['setup'][$_GET['accSetup']][$stage ."@". $dev . "@" . $prop . "@value"];
-                            $error = $_SESSION['setup'][$_GET['accSetup']][$stage ."@". $dev . "@" . $prop . "@error"];
+                            $val = $_SESSION['setup'][$_GET['acc']][$stage ."@". $dev . "@" . $prop . "@value"];
+                            $error = $_SESSION['setup'][$_GET['acc']][$stage ."@". $dev . "@" . $prop . "@error"];
                         
                             array_push($update,array($idClassMACHINE,$idVer,$val,$error));
                         
@@ -232,9 +248,9 @@ class setup {
                             foreach($originalSetup as $setup) {
                             
                             if ($setup[1]===$prop && $setup[0]===$dev && 
-                            (!isset($_SESSION['setup'][$_GET['accSetup']]['newSetup'][$class][$stage][$dev]) || 
-                            (isset($_SESSION['setup'][$_GET['accSetup']]['newSetup'][$class][$stage][$dev]) 
-                            && in_array($prop,$_SESSION['setup'][$_GET['accSetup']]['newSetup'][$class][$stage][$dev])) ) )
+                            (!isset($_SESSION['setup'][$_GET['acc']]['newSetup'][$class][$stage][$dev]) || 
+                            (isset($_SESSION['setup'][$_GET['acc']]['newSetup'][$class][$stage][$dev]) 
+                            && in_array($prop,$_SESSION['setup'][$_GET['acc']]['newSetup'][$class][$stage][$dev])) ) )
                             { 
                                 if( !defined('CREATE_VER_EXECUTED') ){
                                     $this->mySQL->insertVer($stamp,$label,$comment,0);
@@ -266,8 +282,8 @@ class setup {
     }
     
     
-    unset($_SESSION['setup'][$_GET['accSetup']]);
-    unset($_GET['accStage']);
+    unset($_SESSION['setup'][$_GET['acc']]);
+    unset($_GET['stage']);
     unset($CREATE_VER_EXECUTED);
 
 
@@ -277,6 +293,7 @@ class setup {
     public function createClassForm(&$layoutInfo,&$tabArray,&$printDevProps,$choosenCL) {
         
         $devices = array_merge(...$this->mySQL->getTabRows( "device$choosenCL", array('device') ));
+        $commentSetup = json_decode($this->mySQL->getVerComment($_SESSION['setup'][$_GET['acc']][$this->labelSetup]),true);
         
         foreach($this->stages as $stage) {
             $CREATE_STAGE_LABEL = True;
@@ -290,12 +307,12 @@ class setup {
             
 
             //---------- Devices checkbox
-            $devicesList = $this->mySQL->getClassDev($choosenCL,$_GET['accSetup'], $stage);
+            $devicesList = $this->mySQL->getClassDev($choosenCL,$_GET['acc'], $stage);
             if (!empty($devicesList)) {
                 array_push($tabArray,$stage);
                 
-                $deviceChoosen = (isset($_SESSION['setup'][$_GET['accSetup']]['OPEN'][$choosenCL][$stage])) ? 
-                                $_SESSION['setup'][$_GET['accSetup']]['OPEN'][$choosenCL][$stage]:
+                $deviceChoosen = (isset($_SESSION['setup'][$_GET['acc']]['OPEN'][$choosenCL][$stage])) ? 
+                                $_SESSION['setup'][$_GET['acc']]['OPEN'][$choosenCL][$stage]:
                                 '';
                 
                
@@ -312,25 +329,25 @@ class setup {
             if ($deviceChoosen !== '') {
                 $dev = $deviceChoosen;
                 $hasProperty = true;
-                $setupList =  array_merge(...$this->mySQL->getClassPropPerDev($_SESSION['setup'][$_GET['accSetup']][$this->labelCL],
+                $setupList =  array_merge(...$this->mySQL->getClassPropPerDev($_SESSION['setup'][$_GET['acc']][$this->labelCL],
                 $dev,
-                $_GET['accSetup'],$stage));
+                $_GET['acc'],$stage));
                 
-                $originalSetup = $this->mySQL->getClassSetupPerDev($_SESSION['setup'][$_GET['accSetup']][$this->labelCL],
+                $originalSetup = $this->mySQL->getClassSetupPerDev($_SESSION['setup'][$_GET['acc']][$this->labelCL],
                                                             $dev,
-                                                            $_GET['accSetup'],$stage,
-                                                            $this->mySQL->getVerID($_SESSION['setup'][$_GET['accSetup']][$this->labelSetup]));
+                                                            $_GET['acc'],$stage,
+                                                            $this->mySQL->getVerID($_SESSION['setup'][$_GET['acc']][$this->labelSetup]));
                 
-                $newSetupList = $_SESSION['setup'][$_GET['accSetup']]['newSetup'][$choosenCL][$stage][$dev];
+                $newSetupList = $_SESSION['setup'][$_GET['acc']]['newSetup'][$choosenCL][$stage][$dev];
                 
             
                 foreach($newSetupList as $prop) {
                     $EXISTS_DEV_PROP = False;
-                    if (!in_array($prop,$setupList) || isset($_SESSION['setup'][$_GET['accSetup']][$stage ."@". $dev . "@" . $prop . "@value"])) {
-                        if ( isset($_SESSION['setup'][$_GET['accSetup']][$stage ."@". $dev . "@" . $prop . "@value"]) ) {
+                    if (!in_array($prop,$setupList) || isset($_SESSION['setup'][$_GET['acc']][$stage ."@". $dev . "@" . $prop . "@value"])) {
+                        if ( isset($_SESSION['setup'][$_GET['acc']][$stage ."@". $dev . "@" . $prop . "@value"]) ) {
                             array_push($rows,array($prop,
-                            $_SESSION['setup'][$_GET['accSetup']][$stage ."@". $dev . "@" . $prop . "@value"],
-                            $_SESSION['setup'][$_GET['accSetup']][$stage ."@". $dev . "@" . $prop . "@error"]));
+                            $_SESSION['setup'][$_GET['acc']][$stage ."@". $dev . "@" . $prop . "@value"],
+                            $_SESSION['setup'][$_GET['acc']][$stage ."@". $dev . "@" . $prop . "@error"]));
                         } else {
                             array_push($rows,array($prop));
                         }
@@ -365,9 +382,10 @@ class setup {
                 $printSetup .= '</div>';
                 
 
-          
-            $comment = (isset($_SESSION['setup'][$_GET['accSetup']]['comment'][$choosenCL][$stage][$dev]))?
-                        $_SESSION['setup'][$_GET['accSetup']]['comment'][$choosenCL][$stage][$dev]: '';
+            
+                $hasComment = (isset($commentSetup[$choosenCL][$stage][$dev]))? $commentSetup[$choosenCL][$stage][$dev]: '';
+                $commentNew = (isset($_SESSION['setup'][$_GET['acc']]['comment'][$choosenCL][$stage][$dev]))?
+                        $_SESSION['setup'][$_GET['acc']]['comment'][$choosenCL][$stage][$dev]: $hasComment;
             }
 
             }
@@ -381,7 +399,7 @@ class setup {
                 $this->tab->setRows2($rows,$types);
                 
                 $printSetup .=  "<div class='setupTab' >".
-                        $this->tab->printEditTab(array(false,true,true),$stage,$deviceChoosen,true,$comment);
+                        $this->tab->setupTable(array(false,true,true),$stage,$choosenCL,$deviceChoosen,$commentNew);
                 $printSetup .=  "</div>"; 
                 }
 
@@ -396,22 +414,22 @@ class setup {
 
                 $dev = $device;
                 
-                $originalSetup = $this->mySQL->getClassSetupPerDev($_SESSION['setup'][$_GET['accSetup']][$this->labelCL],
+                $originalSetup = $this->mySQL->getClassSetupPerDev($_SESSION['setup'][$_GET['acc']][$this->labelCL],
                                                             $dev,
-                                                            $_GET['accSetup'],$stage,
-                                                            $this->mySQL->getVerID($_SESSION['setup'][$_GET['accSetup']][$this->labelSetup]));
+                                                            $_GET['acc'],$stage,
+                                                            $this->mySQL->getVerID($_SESSION['setup'][$_GET['acc']][$this->labelSetup]));
                 
-                $newSetupList = (isset($_SESSION['setup'][$_GET['accSetup']]['newSetup'][$choosenCL][$stage][$dev]))?
-                $_SESSION['setup'][$_GET['accSetup']]['newSetup'][$choosenCL][$stage][$dev]: array();
+                $newSetupList = (isset($_SESSION['setup'][$_GET['acc']]['newSetup'][$choosenCL][$stage][$dev]))?
+                $_SESSION['setup'][$_GET['acc']]['newSetup'][$choosenCL][$stage][$dev]: array();
                 
                 
 
                 foreach($originalSetup as $setup) {
-                    if (isset($_SESSION['setup'][$_GET['accSetup']][$stage ."@". $setup[0] . "@" . $setup[1] . "@value"]) ) {
+                    if (isset($_SESSION['setup'][$_GET['acc']][$stage ."@". $setup[0] . "@" . $setup[1] . "@value"]) ) {
                         array_push($rowsT,array($setup[1],
-                        $_SESSION['setup'][$_GET['accSetup']][$stage ."@". $setup[0] . "@" . $setup[1] . "@value"],
-                        $_SESSION['setup'][$_GET['accSetup']][$stage ."@". $setup[0] . "@" . $setup[1] . "@error"]));
-                    } else if (in_array($setup[1],$newSetupList) || !isset($_SESSION['setup'][$_GET['accSetup']]['newSetup'][$choosenCL][$stage][$dev])) {
+                        $_SESSION['setup'][$_GET['acc']][$stage ."@". $setup[0] . "@" . $setup[1] . "@value"],
+                        $_SESSION['setup'][$_GET['acc']][$stage ."@". $setup[0] . "@" . $setup[1] . "@error"]));
+                    } else if (in_array($setup[1],$newSetupList) || !isset($_SESSION['setup'][$_GET['acc']]['newSetup'][$choosenCL][$stage][$dev])) {
                         array_push($rowsT,array($setup[1],$setup[2],$setup[3]));
                         $attrID = $this->mySQL->getAttrID('property',$choosenCL,$setup[1]);
                     }
@@ -419,13 +437,16 @@ class setup {
                 }
 
                 foreach($newSetupList as $prop) {
-                    if (isset($_SESSION['setup'][$_GET['accSetup']][$stage ."@". $dev . "@" . $prop . "@value"]) ) {
+                    if (isset($_SESSION['setup'][$_GET['acc']][$stage ."@". $dev . "@" . $prop . "@value"]) ) {
                      array_push($rowsT,array($prop,
-                        $_SESSION['setup'][$_GET['accSetup']][$stage ."@". $dev . "@" . $prop . "@value"],
-                        $_SESSION['setup'][$_GET['accSetup']][$stage ."@". $dev . "@" . $prop . "@error"]));
+                        $_SESSION['setup'][$_GET['acc']][$stage ."@". $dev . "@" . $prop . "@value"],
+                        $_SESSION['setup'][$_GET['acc']][$stage ."@". $dev . "@" . $prop . "@error"]));
                     }
                 }
                 
+                $hasComment = (isset($commentSetup[$choosenCL][$stage][$device]))? $commentSetup[$choosenCL][$stage][$device]: '';
+                $commentNew = (isset($_SESSION['setup'][$_GET['acc']]['comment'][$choosenCL][$stage][$device]))?
+                        $_SESSION['setup'][$_GET['acc']]['comment'][$choosenCL][$stage][$device]: $hasComment;
 
                 if (!empty($rowsT)) {
                     if( $CREATE_STAGE_LABEL ){
@@ -439,7 +460,7 @@ class setup {
                     $this->tab->setRows($rowsT);
                     
                 
-                   $layoutInfo['OVERVIEW'] .= $this->tab->printEditTab(array(false,false,false),'NOupdate',$device);
+                   $layoutInfo['OVERVIEW'] .= $this->tab->setupTable(array(false,false,false),$stage,$choosenCL,$device,$commentNew);
                 }
           
                
@@ -449,12 +470,12 @@ class setup {
             
         }
 
-        unset($_SESSION['setup'][$_GET['accSetup']]['delrows']);
+        unset($_SESSION['setup'][$_GET['acc']]['delrows']);
     }
 
     public function createSetupLayout(&$layoutInfo) {
         $layoutInfo['OVERVIEW'] = '';
-        $comment = json_decode($this->mySQL->getVerComment($_SESSION['setup'][$_GET['accSetup']][$this->labelSetup]),true);
+        $comment = json_decode($this->mySQL->getVerComment($_SESSION['setup'][$_GET['acc']][$this->labelSetup]),true);
        
         $updatedFrom = $comment['Updated from'];
         unset($comment['Updated from']);
@@ -465,7 +486,7 @@ class setup {
         
         $printComment = '';
         $printComment .= "<div class='summary'>";
-        $printComment .= "<div><b>Updated:</b> &ensp;  <b>on</b> ".$_SESSION['setup'][$_GET['accSetup']][$this->labelSetup]
+        $printComment .= "<div><b>Updated:</b> &ensp;  <b>on</b> ".$_SESSION['setup'][$_GET['acc']][$this->labelSetup]
         ." &ensp;  <b>from</b> $updatedFrom &ensp; <b>by</b> $updatedBy</div><br>";
         if (is_array($comment)) {
             $printComment .= "<div><b>Comments:</b> </div><br>";
@@ -487,22 +508,16 @@ class setup {
             foreach($this->stages as $stage) {
                 $buttons = '';
                 $overview = '';
-                //array_push($tabArray,$stage); 
+                
                 $label = htmlentities($stage);
                             
-               // $layoutInfo['OVERVIEW'] .= "<div class='overviewSetup'>
-               //             <div class='overview_$label'>$label</div></br>";
-                
-                
-
-                //$filepath= "../uploads/images/fig.png"; 
-                //$layoutInfo['OVERVIEW'] .=  "<img src='$filepath' class='image'>";
+              
 
                 $STAGE_LABEL = true;
                 foreach ($this->classList as $choosenCL) {
                     
                     $CLASS_LABEL = true;
-                $devicesList = $this->mySQL->getClassDev($choosenCL,$_GET['accSetup'], $stage);
+                $devicesList = $this->mySQL->getClassDev($choosenCL,$_GET['acc'], $stage);
 
                 
                 
@@ -510,17 +525,17 @@ class setup {
                     
                     $originalSetup = $this->mySQL->getClassSetupPerDev($choosenCL,
                                             $dev,
-                                            $_GET['accSetup'],$stage,
-                                            $this->mySQL->getVerID($_SESSION['setup'][$_GET['accSetup']][$this->labelSetup]));
+                                            $_GET['acc'],$stage,
+                                            $this->mySQL->getVerID($_SESSION['setup'][$_GET['acc']][$this->labelSetup]));
                     $rowsSetup = array();
                     foreach($originalSetup as $setup) {
                         $dev = $setup[0];
                         $prop = $setup[1];
                         $val = $setup[2];
                         $error = $setup[3];
-                        if (isset($_SESSION['setup'][$_GET['accSetup']][$stage ."@". $dev . "@" . $prop . "@value"])) {
-                            $val = $_SESSION['setup'][$_GET['accSetup']][$stage ."@". $dev . "@" . $prop . "@value"];
-                            $error = $_SESSION['setup'][$_GET['accSetup']][$stage ."@". $dev . "@" . $prop . "@error"];
+                        if (isset($_SESSION['setup'][$_GET['acc']][$stage ."@". $dev . "@" . $prop . "@value"])) {
+                            $val = $_SESSION['setup'][$_GET['acc']][$stage ."@". $dev . "@" . $prop . "@value"];
+                            $error = $_SESSION['setup'][$_GET['acc']][$stage ."@". $dev . "@" . $prop . "@error"];
                         } 
                         array_push($rowsSetup,array($prop,$val,$error));
                         
@@ -535,23 +550,7 @@ class setup {
                             '</button>';
                             $overview .= "<div class='hideDiv' id='$stage$choosenCL' > 
                             <div class='a'> $choosenCL </div></br></br>";
-                            //$layoutInfo['OVERVIEW'] .= "<div class='hideDiv' id='$stage$choosenCL' >";
-
-                            /*
-                            $layoutInfo['OVERVIEW'] .= "<div class='class'>".
-                            '<button id="classes" onclick="hideDiv(\''.$stage.$choosenCL.'\')">'.
-                            "<label > $choosenCL </label>".
-                            '</button>'.
-                            "</div></br>". 
-                            "<div class='hideDiv' id='$stage$choosenCL' >";
-                            */
-                       /*     $layoutInfo[$stage] .= "<div class='overviewAll'>".
-                            '<button id="classes" onclick="hideDiv(\''.$stage.$choosenCL.'\')">'.
-                            "<label > $choosenCL </label>".
-                            '</button>'.
-                            "</div>". 
-                            "<div class='hideDiv' id='$stage$choosenCL' >";
-                            */
+                           
 
                             $CLASS_LABEL = false;
                         }
@@ -560,20 +559,11 @@ class setup {
                         $this->tab->setLabels(array('PROPERTY','value','error'));
                         $this->tab->setRows($rowsSetup);
                         
-                        //$layoutInfo['OVERVIEW'] .= $this->tab->printEditTab2($dev);
-                        $overview .= $this->tab->printEditTab2($dev);
 
-                        //$layoutInfo[$stage] .= $this->tab->printEditTab2($dev);
-                        if (isset($comment[$choosenCL][$stage][$dev])) {
-                           // $layoutInfo['OVERVIEW'] .= "<div class='comment'> <b>Comment: </b>".
-                           //                         $comment[$choosenCL][$stage][$dev]."</div></br>";
-                            $overview .= "<div class='comment'> <b>Comment: </b>".
-                                                    $comment[$choosenCL][$stage][$dev]."</div>";
-                            //$layoutInfo[$stage] .= "<div class='comment'> <b>Comment: </b>".
-                            //$comment[$choosenCL][$stage][$dev]."</div></br>";
-                        }
+                        $hasComment = (isset($comment[$choosenCL][$stage][$dev]))? $comment[$choosenCL][$stage][$dev]: '';
+            
+                        $overview .= $this->tab->setupTable(array(false,false,false),$stage,$choosenCL,$dev,$hasComment);
                         
-                        //$layoutInfo[$stage] .= "</div>";
                        
                     } else {
                        

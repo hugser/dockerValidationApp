@@ -132,6 +132,8 @@ function is_selected($value){
     <div class = "rightLayout">
         <?php 
             if (isset($_SESSION['validation'][$_GET['acc']]['validation'])) {
+
+                
                 
                 echo '<div id="tab-container">';
                 createInputTabs($tabArray);

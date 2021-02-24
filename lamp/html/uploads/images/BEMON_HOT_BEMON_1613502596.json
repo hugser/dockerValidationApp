@@ -1,0 +1,13 @@
+{
+    "R1": {
+        "SOFB_01": {
+            "Excluded_CM" : ["asdaldasd","asdwwwq","123331ssdsd"],
+            "Excluded_BPM" : ["AAasdaldasd","AAAasdwwwq","AAA123331ssdsd"]
+        },
+        "SOFB_02": {
+            "Excluded_CM" : ["asdaldasd","asdwwwq","123331ssdsd"],
+            "Excluded_BPM" : ["AAasdaldasd","AAAasdwwwq","AAA123331ssdsd"]
+        }
+    }
+                
+}

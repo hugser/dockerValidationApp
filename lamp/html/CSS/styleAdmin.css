@@ -160,20 +160,47 @@ body, html{
     margin-left: 2%;
     width: 28%;
     float: left;
-    overflow-x: auto;
+    
   }
 
   .rightLayout .inner .setupTab {
     width: 65%;
     float: center;
     overflow-x: auto;
-    padding-top: 4%;
     padding-left: 8%;
   }
 
-  .rightLayout .inner .overview {
+  .rightLayout .inner .setupTab .plot {
+    position: relative;
+    float: center;
+    width:100%;
+    height:45%;
     margin-bottom: 1%;
-    width: 48%;
+  }
+
+  .rightLayout .inner .setupTab .tabComment{
+    position: relative;
+    background:#f5f5f5; 
+    font-size: 1.2rem; 
+    font-family : Verdana, Arial, sans-serif;
+    text-align: left;
+   
+    border-color: #adadad; 
+  border-radius: 0.1em; 
+  border-width: 0.1em;
+  border-style: dashed; 
+  padding-left: 2em; 
+  width:100%; 
+  max-width:100%;  
+  max-height:30vh; 
+  background: #F3F3F3;
+  }
+
+
+
+  .rightLayout .inner .overview {
+    margin: 2%;
+    width: 46%;
     float: left;
   }
 
@@ -205,12 +232,40 @@ body, html{
     margin-top: -3%;
     margin-bottom: 5%;
     border-style: none;
+    
 
+  }
+
+  .rightLayout .inner .overview .tabComment{
+    position: relative;
+    background:#f5f5f5; 
+    font-size: 1.2rem; 
+    font-family : Verdana, Arial, sans-serif;
+    text-align: left;
+   
+    border-color: #adadad; 
+  border-radius: 0.1em; 
+  border-width: 0.1em;
+  border-style: dashed; 
+  padding-left: 2em; 
+  width:100%;  
+  max-height:30vh; 
+  background: #F3F3F3;
   }
 
   .rightLayout .inner .overview .image {
     width: 98%;
   }
+
+
+  .rightLayout .inner .overview .plot {
+    position: relative;
+    float: center;
+    width:100%;
+    height:45%;
+    margin-bottom: 1%;
+  }
+
 
   .rightLayout .inner .overview .overview_cold {
     background:rgb(170, 217, 255); 
@@ -220,8 +275,11 @@ body, html{
     box-shadow: 0 .1em .1em rgba(0, 0, 0,.4);
     font-size: 1.5rem;
     text-align: center;
-    width: 60%;
-    margin-left: 1%;
+    width: 90%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 
@@ -233,9 +291,13 @@ body, html{
     box-shadow: 0 .1em .1em rgba(0, 0, 0,.4);
     font-size: 1.5rem;
     text-align: center;
-    width: 60%;
-    margin-left: 1%;
+    width: 90%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
   }
+
 
   .rightLayout .inner .overview .overview_none {
     background:rgb(172, 172, 172); 
@@ -245,9 +307,13 @@ body, html{
     box-shadow: 0 .1em .1em rgba(0, 0, 0,.4);
     font-size: 1.5rem;
     text-align: center;
-    width: 60%;
-    margin-left: 1%;
+    width: 90%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
   }
+
 
   .rightLayout .inner .overviewSetup {
     margin-bottom: 0%;
@@ -268,7 +334,7 @@ body, html{
     border-color: #999;
   }
 
-  .rightLayout .inner .overviewSetup .a {
+  .rightLayout .inner .overviewSetup .hideDiv .a {
     float: right;
     width: 30%;
     border-style: solid;
@@ -295,6 +361,8 @@ body, html{
     border-radius: 0.5rem;
   }
 
+
+
   .rightLayout .inner .overviewSetup .overview_cold {
     background:rgb(170, 217, 255, 0.8); 
       border-width: 0rem;
@@ -312,6 +380,8 @@ body, html{
     
   }
 
+ 
+
   .rightLayout .inner .overviewSetup .overview_hot {
     background:rgb(255, 184, 184, 0.8); 
       border-width: 0rem;
@@ -327,6 +397,7 @@ body, html{
       margin-bottom: 1%;
       padding-left: 1%;
   }
+
 
   .rightLayout .inner .overviewSetup .overview_none {
     background:rgb(172, 172, 172, 0.8); 
@@ -344,6 +415,8 @@ body, html{
       padding-left: 1%;
   }
 
+
+
   .rightLayout .inner .overviewSetup .overview_buttons {
     width: 98%;
     margin-left: 2%;
@@ -352,26 +425,57 @@ body, html{
 
   .rightLayout .inner .overviewSetup .hideDiv {
     position: relative;
-      width: 90%;
       text-align: center;
-      display: none;   
+      width:90%;        
       margin-left: 5%;
-      margin-top: 5%; 
+      margin-top: 5%;
+      display: none;  
+
     }
 
-    .rightLayout .inner .overviewSetup .hideDiv .comment{
+  .rightLayout .inner .overviewSetup .hideDiv .comment{
       position: relative;
       background:#f5f5f5; 
       font-size: 1rem; 
       font-family : Verdana, Arial, sans-serif;
-      text-align: left; 
-      border-style: none;
-      margin-top: -7%;
+      text-align: left;
+      position: relative;
+      float: right;
+      width: 100%;
+      height: fit-content;
+
+      border-color: #adadad;
+      border-radius: 0.1em;
+      border-style: dashed;
+      border-width: 0.1em;
       margin-bottom: 10%;
-      margin-left: 7%;
-      width: 86%;
-      padding-left: 0.5%;
     }
+
+    .rightLayout .inner .overviewSetup .hideDiv .tabComment{
+      position: relative;
+      background:#f5f5f5; 
+      font-size: 1rem; 
+      font-family : Verdana, Arial, sans-serif;
+      text-align: left;
+     
+      border-color: #adadad; 
+      border-radius: 0.1em; 
+      border-width: 0.1em;
+      border-style: dashed; 
+      padding-left: 2em; 
+      width:100%;  
+      background: #F3F3F3;
+    }
+    
+
+    .rightLayout .inner .overviewSetup .hideDiv  .plot {
+      position: relative;
+      float: center;
+      width: 100%;
+      height: 30%;
+      margin-bottom: 1%
+    }
+
 
     .rightLayout .inner .overviewValidation {
       margin-bottom: 0%;
@@ -473,6 +577,7 @@ body, html{
       margin-top: 4%;
     }
 
+
  
   .rightLayout .inner .overviewAll {
     margin-bottom: 1%;
@@ -503,6 +608,7 @@ body, html{
     display: none;    
   }
 
+
   .rightLayout .inner .overviewAll .info{
     font-size: 1.2rem;
     text-align: left;
@@ -514,10 +620,39 @@ body, html{
     box-shadow: .2em 0 .4em rgba(0,0,0,.4);
   }
 
+ 
+
   .rightLayout .inner .overviewAllperClass {
-    margin-bottom: 1%;
-    width: 48%;
+    width: 90%;
     float: left;
+    margin-left: 5%;
+  }
+
+  .rightLayout .inner .overviewAllperClass .tabComment{
+    position: relative;
+    background:#f5f5f5; 
+    font-size: 1.3rem; 
+    font-family : Verdana, Arial, sans-serif;
+    text-align: left;
+   
+    border-color: #adadad; 
+    border-radius: 0.1em; 
+    border-width: 0.1em;
+    border-style: dashed; 
+    padding-left: 2em; 
+    width:100%; 
+    max-width:100%; 
+    background: #F3F3F3;
+  }
+
+  .rightLayout .inner .overviewAllperClass .plot{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:85%;
+    height:65%;
+    margin-bottom: 1%;
   }
   
   
@@ -609,6 +744,44 @@ body, html{
     margin: 0.2em;
   }
 
+  .navbar .flash_fail {
+    float: left;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bolder;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border: solid #ff3c00;
+    color: white;
+    min-width: 40em;
+
+    
+    background-color:#ff3c00;
+    margin-left: 2em;
+    margin-top: 0.35em;
+  }
+
+  .navbar .flash_ok {
+    float: left;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bolder;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border: solid #00c95a;
+    color: white;
+    min-width: 40em;
+
+    
+    background-color:#00c95a;
+    margin-left: 2em;
+    margin-top: 0.35em;
+  }
+
   .navbar .headAdmin {
     float: right;
     text-align: center;
@@ -667,6 +840,34 @@ body, html{
   .checkboxes label:hover {
     background-color: #02a7fa;
   }
+
+
+  .checkboxesTab {
+    display: block;
+    text-align: left;
+    
+    border: 1px solid;
+    padding-left: 2ch;
+    padding-top: 1ch;
+    padding-bottom: 1ch;
+    
+    height: 10em;
+    max-width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: white;
+  
+  
+  }
+  .checkboxesTab label {
+    display: block;
+  }
+  .checkboxesTab label:hover {
+    background-color: #02a7fa;
+  }
+  
+
+
   
   /* small checkbox box  */
   .checkboxesSmall {
@@ -709,6 +910,7 @@ body, html{
     position: relative;
     padding-left: 2rem;
     margin-bottom: 0.9rem;
+    margin-right: 0.9rem;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
